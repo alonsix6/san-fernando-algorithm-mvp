@@ -33,8 +33,8 @@ export default function OptimizationLayer() {
 
   // Funnel de conversion San Fernando - Ecommerce
   const funnelSteps = [
-    { stage: 'Alcance', value: 2380000, conversionRate: 3.7, IconComponent: Users, bgColor: 'bg-sf-red' },
-    { stage: 'Visitas Web', value: 87400, conversionRate: 48.0, IconComponent: Globe, bgColor: 'bg-sf-darkRed' },
+    { stage: 'Alcance', value: 2380000, conversionRate: 3.7, IconComponent: Users, bgColor: 'bg-sf-blue' },
+    { stage: 'Visitas Web', value: 87400, conversionRate: 48.0, IconComponent: Globe, bgColor: 'bg-sf-blueDark' },
     { stage: 'Vistas Producto', value: 42000, conversionRate: 44.3, IconComponent: Eye, bgColor: 'bg-sf-blue' },
     { stage: 'Add to Cart', value: 18600, conversionRate: 66.7, IconComponent: ShoppingCart, bgColor: 'bg-sf-accent' },
     { stage: 'Compras', value: 9340, conversionRate: null, IconComponent: CheckCircle, bgColor: 'bg-sf-success' }
@@ -43,7 +43,7 @@ export default function OptimizationLayer() {
   return (
     <div className="space-y-4 sm:space-y-6 lg:space-y-8">
       {/* Header */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/20">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/20">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
           <div>
             <h2 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
@@ -58,7 +58,7 @@ export default function OptimizationLayer() {
               <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-medium">{monthlyPeriod}</span>
             </div>
-            <span className="px-2 sm:px-3 py-1 bg-sf-red text-white rounded-full text-xs sm:text-sm font-medium flex items-center gap-1">
+            <span className="px-2 sm:px-3 py-1 bg-sf-blue text-white rounded-full text-xs sm:text-sm font-medium flex items-center gap-1">
               <RefreshCw className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span className="hidden sm:inline">Auto-optimizacion activa</span>
               <span className="sm:hidden">Activa</span>
@@ -88,7 +88,7 @@ export default function OptimizationLayer() {
         </div>
 
         {/* Impresiones + CPM */}
-        <div className="bg-sf-red text-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-lg">
+        <div className="bg-sf-blue text-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-lg">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Eye className="w-6 h-6 sm:w-7 sm:h-7" />
             <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-sf-success text-sf-charcoal">
@@ -161,7 +161,7 @@ export default function OptimizationLayer() {
       </div>
 
       {/* Performance Trends */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/20">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/20">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-4 sm:mb-6">
           <div>
             <h3 className="text-sm sm:text-base font-bold text-white">Performance Ultimos 7 Dias</h3>
@@ -169,7 +169,7 @@ export default function OptimizationLayer() {
           </div>
           <div className="flex gap-3 sm:gap-4 text-xs sm:text-sm">
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-sf-red"></div>
+              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-sf-blue"></div>
               <span className="text-sf-textGray">Ventas (S/)</span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2">
@@ -187,10 +187,10 @@ export default function OptimizationLayer() {
               <YAxis yAxisId="left" stroke="#9CA3AF" style={{ fontSize: '10px' }} tick={{ fontSize: 10 }} width={40} />
               <YAxis yAxisId="right" orientation="right" stroke="#9CA3AF" style={{ fontSize: '10px' }} tick={{ fontSize: 10 }} width={40} />
               <Tooltip
-                contentStyle={{ backgroundColor: '#16213E', border: '1px solid #C8102E', borderRadius: '8px', color: '#fff', fontSize: '12px' }}
-                labelStyle={{ fontWeight: 'bold', marginBottom: '8px', color: '#C8102E' }}
+                contentStyle={{ backgroundColor: '#16213E', border: '1px solid #024b98', borderRadius: '8px', color: '#fff', fontSize: '12px' }}
+                labelStyle={{ fontWeight: 'bold', marginBottom: '8px', color: '#024b98' }}
               />
-              <Line yAxisId="left" type="monotone" dataKey="ventas" stroke="#C8102E" strokeWidth={2} dot={{ r: 3 }} />
+              <Line yAxisId="left" type="monotone" dataKey="ventas" stroke="#024b98" strokeWidth={2} dot={{ r: 3 }} />
               <Line yAxisId="right" type="monotone" dataKey="engagement" stroke="#0052CC" strokeWidth={2} dot={{ r: 3 }} />
             </LineChart>
           </ResponsiveContainer>
@@ -198,7 +198,7 @@ export default function OptimizationLayer() {
       </div>
 
       {/* Channel Distribution */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-sf-red/20">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-sf-blue/20">
         <h3 className="text-sm sm:text-base font-bold text-white mb-4 sm:mb-6 lg:mb-8 text-center md:text-left">Distribucion de Revenue por Canal</h3>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-12">
@@ -210,23 +210,23 @@ export default function OptimizationLayer() {
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip contentStyle={{ backgroundColor: '#16213E', border: '1px solid #C8102E', borderRadius: '8px', color: '#fff', fontSize: '12px' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#16213E', border: '1px solid #024b98', borderRadius: '8px', color: '#fff', fontSize: '12px' }} />
               </PieChart>
             </ResponsiveContainer>
           </div>
 
-          <div className="hidden lg:block w-px h-64 bg-sf-red/20"></div>
+          <div className="hidden lg:block w-px h-64 bg-sf-blue/20"></div>
 
           <div className="flex-1 w-full max-w-md space-y-2 sm:space-y-3">
             {channelData.map((channel, idx) => (
-              <div key={idx} className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-sf-charcoal rounded-lg hover:bg-sf-charcoal/80 transition-all duration-200 border border-sf-red/10 hover:border-sf-red/30">
+              <div key={idx} className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-sf-charcoal rounded-lg hover:bg-sf-charcoal/80 transition-all duration-200 border border-sf-blue/10 hover:border-sf-blue/30">
                 <div className="flex items-center gap-2 sm:gap-3 min-w-0">
                   <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full flex-shrink-0 shadow-sm" style={{ backgroundColor: channel.color }}></div>
                   <span className="text-xs sm:text-sm font-medium text-white truncate">{channel.name}</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 ml-2 sm:ml-4">
                   <span className="text-xs sm:text-sm font-bold text-white">S/ {(channel.revenue / 1000).toFixed(0)}K</span>
-                  <span className="text-xs sm:text-sm font-bold text-sf-charcoal bg-sf-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md min-w-[40px] sm:min-w-[48px] text-center">
+                  <span className="text-xs sm:text-sm font-bold text-sf-charcoal bg-sf-blue px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md min-w-[40px] sm:min-w-[48px] text-center">
                     {channel.value}%
                   </span>
                 </div>
@@ -237,7 +237,7 @@ export default function OptimizationLayer() {
       </div>
 
       {/* Funnel de Conversion - Ecommerce */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/20">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/20">
         <h3 className="text-sm sm:text-base font-bold text-white mb-4 sm:mb-6">Funnel de Conversion Ecommerce</h3>
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 sm:gap-3 lg:gap-3 overflow-x-auto pb-2 lg:pb-4">
@@ -262,7 +262,7 @@ export default function OptimizationLayer() {
 
               {idx < funnelSteps.length - 1 && (
                 <div className="hidden lg:flex flex-col items-center justify-center min-w-[50px] xl:min-w-[60px]">
-                  <div className="text-xs xl:text-sm font-bold text-sf-red mb-1">{step.conversionRate}%</div>
+                  <div className="text-xs xl:text-sm font-bold text-sf-blue mb-1">{step.conversionRate}%</div>
                   <svg className="w-6 h-6 xl:w-8 xl:h-8 text-sf-textGray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -273,11 +273,11 @@ export default function OptimizationLayer() {
         </div>
 
         {/* Funnel Summary */}
-        <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-sf-red/20">
+        <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-sf-blue/20">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-            <div className="bg-sf-red/10 rounded-lg p-3 border border-sf-red/20">
+            <div className="bg-sf-blue/10 rounded-lg p-3 border border-sf-blue/20">
               <p className="text-xs text-sf-textGray mb-0.5 sm:mb-1">Conversion Global</p>
-              <p className="text-lg sm:text-xl font-bold text-sf-red">{(PERFORMANCE_KPIS.sales.conversion_rate * 100).toFixed(2)}%</p>
+              <p className="text-lg sm:text-xl font-bold text-sf-blue">{(PERFORMANCE_KPIS.sales.conversion_rate * 100).toFixed(2)}%</p>
               <p className="text-xs text-sf-textGray">Web - Compra</p>
             </div>
             <div className="bg-sf-success/10 rounded-lg p-3 border border-sf-success/20">
@@ -295,7 +295,7 @@ export default function OptimizationLayer() {
       </div>
 
       {/* CRM Monitoring - Ecommerce Alerts */}
-      <div className="bg-sf-red text-white rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6">
+      <div className="bg-sf-blue text-white rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
           <div className="flex items-center gap-2 sm:gap-3">
             <Bell className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
@@ -341,9 +341,9 @@ export default function OptimizationLayer() {
       </div>
 
       {/* Alertas Automaticas */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/20">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/20">
         <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-          <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6 text-sf-red" />
+          <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6 text-sf-blue" />
           <h3 className="text-sm sm:text-base font-bold text-white">Alertas del Sistema</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
@@ -365,7 +365,7 @@ export default function OptimizationLayer() {
                 </span>
               </div>
               <p className="text-xs text-sf-textGray mb-1.5 sm:mb-2">{alert.message}</p>
-              <p className="text-xs font-semibold text-sf-red">
+              <p className="text-xs font-semibold text-sf-blue">
                 Accion: {alert.action}
               </p>
             </div>
@@ -374,11 +374,11 @@ export default function OptimizationLayer() {
       </div>
 
       {/* Competitor Analysis */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/20">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/20">
         <h3 className="text-sm sm:text-base font-bold text-white mb-3 sm:mb-4">Analisis de Competencia</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {COMPETITOR_INSIGHTS.map((comp, idx) => (
-            <div key={idx} className="p-3 sm:p-4 bg-sf-charcoal border-2 border-sf-dark rounded-lg hover:border-sf-red/50 transition-colors">
+            <div key={idx} className="p-3 sm:p-4 bg-sf-charcoal border-2 border-sf-dark rounded-lg hover:border-sf-blue/50 transition-colors">
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="min-w-0">
                   <h4 className="font-bold text-white text-sm sm:text-base truncate">{comp.competitor}</h4>

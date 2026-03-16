@@ -32,14 +32,14 @@ export default function Dashboard() {
       name: LAYER_CONFIG.data.name,
       icon: iconMap[LAYER_CONFIG.data.icon],
       description: LAYER_CONFIG.data.description,
-      color: 'bg-sf-red'
+      color: 'bg-sf-blue'
     },
     {
       id: 'decision',
       name: LAYER_CONFIG.decision.name,
       icon: iconMap[LAYER_CONFIG.decision.icon],
       description: LAYER_CONFIG.decision.description,
-      color: 'bg-sf-blue'
+      color: 'bg-sf-blueLight'
     },
     {
       id: 'execution',
@@ -61,7 +61,7 @@ export default function Dashboard() {
     return (
       <div className="min-h-screen bg-sf-charcoal flex items-center justify-center">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-sf-red border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <div className="w-16 h-16 border-4 border-sf-blue border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-white text-lg font-medium">{UI_TEXT.loading}</p>
         </div>
       </div>
@@ -71,11 +71,11 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-sf-charcoal">
       {/* Header */}
-      <header className="bg-sf-dark text-white shadow-lg border-b border-sf-red/20">
+      <header className="bg-sf-dark text-white shadow-lg border-b border-sf-blue/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3 sm:gap-4">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-sf-red rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-sf-blue rounded-xl flex items-center justify-center flex-shrink-0">
                 <ShoppingCart className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
               </div>
               <div className="min-w-0">
@@ -102,8 +102,8 @@ export default function Dashboard() {
                   })}
                 </p>
               </div>
-              <div className="w-10 h-10 bg-sf-red/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0 hover:bg-sf-red/30 transition-colors">
-                <Zap className="w-5 h-5 text-sf-red" fill="currentColor" />
+              <div className="w-10 h-10 bg-sf-blue/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0 hover:bg-sf-blue/30 transition-colors">
+                <Zap className="w-5 h-5 text-sf-blue" fill="currentColor" />
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function Dashboard() {
       </header>
 
       {/* Layer Navigation */}
-      <div className="bg-sf-darkSlate border-b border-sf-red/10 sticky top-0 z-40 shadow-lg">
+      <div className="bg-sf-darkSlate border-b border-sf-blue/10 sticky top-0 z-40 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-3 overflow-x-auto py-4 scrollbar-hide">
             {layers.map((layer) => {
@@ -126,7 +126,7 @@ export default function Dashboard() {
                     flex-shrink-0 flex items-center gap-3 px-5 py-3.5 rounded-xl font-medium transition-all duration-300
                     ${isActive
                       ? `${layer.color} text-white shadow-lg`
-                      : 'bg-sf-charcoal text-sf-textGray hover:bg-sf-dark hover:text-white border border-sf-dark hover:border-sf-red/30'
+                      : 'bg-sf-charcoal text-sf-textGray hover:bg-sf-dark hover:text-white border border-sf-dark hover:border-sf-blue/30'
                     }
                   `}
                 >
@@ -166,7 +166,7 @@ export default function Dashboard() {
                 <div className="w-2 h-2 bg-sf-success rounded-full animate-pulse"></div>
                 {UI_TEXT.systemActive}
               </span>
-              <span className="text-sf-red font-semibold text-xs sm:text-sm">{UI_TEXT.footer.version}</span>
+              <span className="text-sf-blue font-semibold text-xs sm:text-sm">{UI_TEXT.footer.version}</span>
             </div>
           </div>
         </div>

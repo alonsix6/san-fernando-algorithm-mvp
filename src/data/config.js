@@ -19,13 +19,13 @@ export const BRAND_CONFIG = {
   version: '2.0.0',
 
   // Colores de marca San Fernando
-  // Fuente: Manual de identidad corporativa San Fernando (SlideShare / Studocu)
-  // Rojo: emocion, juventud, audacia | Azul: confianza, fuerza | Blanco: limpieza, claridad
+  // Color principal: Azul corporativo #024b98
+  // Azul: confianza, fuerza, principal | Rojo: uso puntual | Blanco: limpieza, claridad
   colors: {
-    primary: '#C8102E',        // Rojo San Fernando (rojo corporativo)
-    primaryDark: '#9B0C23',    // Rojo oscuro (hover / activo)
-    secondary: '#003087',      // Azul San Fernando (azul corporativo)
-    secondaryLight: '#0052CC', // Azul medio
+    primary: '#024b98',        // Azul San Fernando (color principal)
+    primaryDark: '#013a75',    // Azul oscuro (hover / activo)
+    secondary: '#C8102E',      // Rojo San Fernando (uso secundario/puntual)
+    secondaryLight: '#0562c4', // Azul claro
     accent: '#F5A623',         // Ambar/dorado (acento calido - evoca pollo dorado)
     accentLight: '#FFC74F',    // Ambar claro
     white: '#FFFFFF',
@@ -35,7 +35,7 @@ export const BRAND_CONFIG = {
     warning: '#F59E0B',
     danger: '#EF4444',
     // Gradiente corporativo
-    gradient: 'linear-gradient(135deg, #C8102E 0%, #9B0C23 50%, #003087 100%)',
+    gradient: 'linear-gradient(135deg, #024b98 0%, #013a75 50%, #F5A623 100%)',
   },
 };
 
@@ -49,7 +49,7 @@ export const LAYER_CONFIG = {
     subtitle: 'Senales del ecosistema digital en tiempo real',
     description: 'Monitoreo de busquedas, tendencias de consumo, conversaciones en redes y comportamiento del shopper peruano',
     icon: 'Search',
-    color: 'from-sf-red to-sf-darkRed',
+    color: 'from-sf-blue to-sf-blueDark',
   },
   decision: {
     id: 'decision',
@@ -57,7 +57,7 @@ export const LAYER_CONFIG = {
     subtitle: 'Inteligencia estrategica automatizada',
     description: 'Opportunity Score, audiencias objetivo y mensajes de activacion por categoria de producto',
     icon: 'Target',
-    color: 'from-sf-darkRed to-sf-blue',
+    color: 'from-sf-blueDark to-sf-blueLight',
   },
   execution: {
     id: 'execution',
@@ -73,7 +73,7 @@ export const LAYER_CONFIG = {
     subtitle: 'Performance y ajustes en tiempo real',
     description: 'KPIs de Branding y Ecommerce: Alcance, Impresiones, CPM, Interacciones, Ventas, Trafico',
     icon: 'TrendingUp',
-    color: 'from-sf-accent to-sf-red',
+    color: 'from-sf-accent to-sf-blue',
   },
 };
 
@@ -194,7 +194,7 @@ export const DATA_SOURCES_CONFIG = {
     name: 'YouTube',
     description: 'Videos de recetas, contenido gastronomico y reviews de productos',
     icon: 'Youtube',
-    color: 'text-sf-red',
+    color: 'text-sf-blue',
     bgColor: 'bg-sf-dark',
     status: 'active',
   },
@@ -276,7 +276,7 @@ export const CHANNELS_CONFIG = {
       name: 'Programatica / Display',
       platforms: ['Display Video 360', 'Trade Desk'],
       icon: 'Monitor',
-      color: 'text-sf-red',
+      color: 'text-sf-blue',
       bgColor: 'bg-sf-dark',
       budgetShare: 0.10,
       primaryObjective: 'Alcance incremental / Remarketing',
@@ -292,8 +292,8 @@ export const CHANNELS_CONFIG = {
 // CATEGORIAS DE PRODUCTO - Reemplaza Sedes FitZone
 // ============================================================================
 export const CATEGORIAS_CONFIG = [
-  { id: 1, nombre: 'Congelados', descripcion: 'Nuggets, hamburguesas, choriburguer', icon: 'Snowflake', color: '#C8102E', budgetShare: 0.35 },
-  { id: 2, nombre: 'Embutidos', descripcion: 'Hot dog, salchicha, chorizo, jamon, jamonada', icon: 'Package', color: '#003087', budgetShare: 0.30 },
+  { id: 1, nombre: 'Congelados', descripcion: 'Nuggets, hamburguesas, choriburguer', icon: 'Snowflake', color: '#024b98', budgetShare: 0.35 },
+  { id: 2, nombre: 'Embutidos', descripcion: 'Hot dog, salchicha, chorizo, jamon, jamonada', icon: 'Package', color: '#0562c4', budgetShare: 0.30 },
   { id: 3, nombre: 'Carnicos', descripcion: 'Pollo, pavita, cerdo', icon: 'Beef', color: '#F5A623', budgetShare: 0.25 },
   { id: 4, nombre: 'Huevos', descripcion: 'Huevos frescos de granja', icon: 'Egg', color: '#22C55E', budgetShare: 0.10 },
 ];
@@ -414,7 +414,7 @@ export const METRIC_CARDS_CONFIG = [
     channel: 'all',
     objective: 'Branding',
     benchmark_mensual: 2400000,
-    color: '#003087',
+    color: '#0562c4',
   },
   {
     id: 'kpi_impressions',
@@ -430,7 +430,7 @@ export const METRIC_CARDS_CONFIG = [
     objective: 'Branding',
     benchmark_mensual: 12000000,
     cpm_benchmark_soles: 3.51,
-    color: '#C8102E',
+    color: '#024b98',
   },
   {
     id: 'kpi_engagement',
