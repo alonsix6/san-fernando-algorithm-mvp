@@ -72,7 +72,7 @@ export default function DecisionLayer() {
   return (
     <div className="space-y-4 sm:space-y-6 lg:space-y-8">
       {/* Header */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/10">
         <div className="flex flex-col sm:flex-row items-start justify-between gap-3 sm:gap-4">
           <div>
             <h2 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
@@ -83,11 +83,11 @@ export default function DecisionLayer() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
-            <div className="flex items-center gap-1.5 sm:gap-2 bg-sf-red/20 text-sf-accent px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg">
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-sf-blue/20 text-sf-accent px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg">
               <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-medium">{monthlyPeriod}</span>
             </div>
-            <span className="px-2 sm:px-3 py-1 bg-sf-red text-white rounded-full text-xs sm:text-sm font-medium">
+            <span className="px-2 sm:px-3 py-1 bg-sf-blue text-white rounded-full text-xs sm:text-sm font-medium">
               IA Activa
             </span>
           </div>
@@ -95,7 +95,7 @@ export default function DecisionLayer() {
       </div>
 
       {/* Opportunity Score */}
-      <div className="bg-sf-red text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
+      <div className="bg-sf-blue text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 sm:gap-6 mb-4 sm:mb-6 lg:mb-8">
           <div className="flex items-center gap-3 sm:gap-4">
             <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/20 rounded-xl sm:rounded-2xl flex items-center justify-center">
@@ -157,9 +157,9 @@ export default function DecisionLayer() {
       </div>
 
       {/* Strategic Recommendations */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/10">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-red rounded-lg sm:rounded-xl flex items-center justify-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-blue rounded-lg sm:rounded-xl flex items-center justify-center">
             <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
@@ -172,7 +172,7 @@ export default function DecisionLayer() {
           {recommendations.map((rec, idx) => (
             <div key={idx} className={`p-3 sm:p-4 lg:p-5 rounded-lg sm:rounded-xl border-2 ${
               rec.priority === 'high'
-                ? 'bg-sf-red/10 border-sf-red/30'
+                ? 'bg-sf-blue/10 border-sf-blue/30'
                 : rec.priority === 'medium'
                 ? 'bg-yellow-500/10 border-yellow-500/30'
                 : 'bg-sf-blueLight/10 border-sf-blueLight/30'
@@ -181,7 +181,7 @@ export default function DecisionLayer() {
                 <div className="flex items-center gap-2 sm:gap-3">
                   <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold flex items-center gap-1 ${
                     rec.priority === 'high'
-                      ? 'bg-sf-red/30 text-sf-red'
+                      ? 'bg-sf-blue/30 text-sf-blue'
                       : rec.priority === 'medium'
                       ? 'bg-yellow-500/30 text-yellow-400'
                       : 'bg-sf-blueLight/30 text-sf-blueLight'
@@ -208,7 +208,7 @@ export default function DecisionLayer() {
       </div>
 
       {/* Target Audiences */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/10">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-blue rounded-lg sm:rounded-xl flex items-center justify-center">
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -221,7 +221,7 @@ export default function DecisionLayer() {
 
         <div className="grid gap-3 sm:gap-4">
           {audiences.map((aud, idx) => (
-            <div key={idx} className="p-3 sm:p-4 lg:p-5 bg-sf-charcoal rounded-lg sm:rounded-xl border border-sf-dark hover:border-sf-red/30 transition-colors">
+            <div key={idx} className="p-3 sm:p-4 lg:p-5 bg-sf-charcoal rounded-lg sm:rounded-xl border border-sf-dark hover:border-sf-blue/30 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-3 mb-2 sm:mb-3">
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-1 sm:mb-2">
@@ -253,7 +253,7 @@ export default function DecisionLayer() {
                 )}
                 <div>
                   <p className="text-xs text-sf-textGray">CPM Target</p>
-                  <p className="text-lg sm:text-xl font-bold text-sf-red">S/ {aud.cpm_target}</p>
+                  <p className="text-lg sm:text-xl font-bold text-sf-blue">S/ {aud.cpm_target}</p>
                 </div>
               </div>
 
@@ -262,7 +262,7 @@ export default function DecisionLayer() {
                   <span key={pIdx} className="px-2 py-0.5 bg-sf-dark rounded text-xs text-sf-textGray">{platform}</span>
                 ))}
                 {aud.interests.slice(0, 3).map((interest, iIdx) => (
-                  <span key={iIdx} className="px-2 py-0.5 bg-sf-red/10 rounded text-xs text-sf-accent">{interest}</span>
+                  <span key={iIdx} className="px-2 py-0.5 bg-sf-blue/10 rounded text-xs text-sf-accent">{interest}</span>
                 ))}
               </div>
             </div>
@@ -271,15 +271,15 @@ export default function DecisionLayer() {
       </div>
 
       {/* Content Pillars */}
-      <div className="bg-sf-charcoal text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-sf-red/20">
+      <div className="bg-sf-charcoal text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-sf-blue/20">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-          <MessageSquare className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-sf-red" />
+          <MessageSquare className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-sf-blue" />
           <h3 className="text-base sm:text-lg font-bold">Pilares de Contenido San Fernando</h3>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {CONTENT_PILLARS.map((pillar, idx) => (
-            <div key={pillar.id} className={`bg-sf-dark rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-sf-red/20 ${idx === CONTENT_PILLARS.length - 1 && CONTENT_PILLARS.length % 2 !== 0 ? 'sm:col-span-2' : ''}`}>
+            <div key={pillar.id} className={`bg-sf-dark rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-sf-blue/20 ${idx === CONTENT_PILLARS.length - 1 && CONTENT_PILLARS.length % 2 !== 0 ? 'sm:col-span-2' : ''}`}>
               <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: pillar.color }}></div>
                 <p className="text-sf-textGray text-xs sm:text-sm font-semibold">{pillar.name}</p>
@@ -291,7 +291,7 @@ export default function DecisionLayer() {
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {pillar.examples.map((example, eIdx) => (
-                  <span key={eIdx} className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-sf-red/10 rounded text-xs">{example}</span>
+                  <span key={eIdx} className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-sf-blue/10 rounded text-xs">{example}</span>
                 ))}
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function DecisionLayer() {
       </div>
 
       {/* Key Messages Preview */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-sf-blue/10">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-accent rounded-lg sm:rounded-xl flex items-center justify-center">
             <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -315,7 +315,7 @@ export default function DecisionLayer() {
           {KEY_MESSAGES.slice(0, 4).map((msg) => (
             <div key={msg.id} className="p-3 sm:p-4 bg-sf-charcoal rounded-lg border border-sf-dark">
               <div className="flex items-center gap-2 mb-2">
-                <span className="px-2 py-0.5 bg-sf-red/20 rounded text-xs font-bold text-sf-red">{msg.category}</span>
+                <span className="px-2 py-0.5 bg-sf-blue/20 rounded text-xs font-bold text-sf-blue">{msg.category}</span>
                 <span className="px-2 py-0.5 bg-sf-blue/20 rounded text-xs text-sf-blueLight">{msg.objective}</span>
               </div>
               <p className="text-sm font-medium text-white mb-2">{msg.message}</p>

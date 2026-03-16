@@ -218,11 +218,11 @@ export default function DataLayer() {
   return (
     <div className="space-y-4 sm:space-y-6">
       {/* Header & Score Summary */}
-      <div className="bg-sf-charcoal rounded-2xl shadow-sf-lg p-4 sm:p-6 lg:p-8 text-white border border-sf-red/20">
+      <div className="bg-sf-charcoal rounded-2xl shadow-sf-lg p-4 sm:p-6 lg:p-8 text-white border border-sf-blue/20">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4 sm:mb-6">
           <div className="flex-1">
             <div className="flex items-center gap-3 sm:gap-4 mb-4">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 bg-sf-red rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 bg-sf-blue rounded-xl flex items-center justify-center flex-shrink-0">
                 <ShoppingCart className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <div className="min-w-0">
@@ -243,13 +243,13 @@ export default function DataLayer() {
             </div>
             <div className="text-right">
               <p className="text-sf-textGray text-[10px] sm:text-xs uppercase font-semibold mb-0.5 sm:mb-1">Score Global</p>
-              <p className="text-2xl sm:text-3xl font-bold text-sf-red">{scores.overall}</p>
+              <p className="text-2xl sm:text-3xl font-bold text-sf-blue">{scores.overall}</p>
               <p className="text-[10px] sm:text-xs text-sf-textGray">de 10.0</p>
             </div>
             <button
               onClick={loadData}
               disabled={isRefreshing}
-              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-sf-red/20 text-sf-red rounded-lg hover:bg-sf-red/30 transition disabled:opacity-50 text-sm"
+              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-sf-blue/20 text-sf-blue rounded-lg hover:bg-sf-blue/30 transition disabled:opacity-50 text-sm"
             >
               <RefreshCw className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isRefreshing ? 'animate-spin' : ''}`} />
               <span className="hidden sm:inline">Actualizar</span>
@@ -286,9 +286,9 @@ export default function DataLayer() {
       </div>
 
       {/* Insights Clave del Mercado */}
-      <div className="bg-sf-dark rounded-2xl shadow-sf-lg p-4 sm:p-6 lg:p-8 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-2xl shadow-sf-lg p-4 sm:p-6 lg:p-8 border border-sf-blue/10">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-red rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-blue rounded-xl flex items-center justify-center flex-shrink-0">
             <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div className="min-w-0">
@@ -303,7 +303,7 @@ export default function DataLayer() {
             const colorScheme =
               insight.source === 'Google Trends' ? { bg: 'bg-sf-blueLight/10', text: 'text-sf-blueLight', icon: 'bg-sf-blueLight', badge: 'bg-sf-blueLight/20 text-sf-blueLight' } :
               insight.source === 'TikTok' ? { bg: 'bg-sf-success/10', text: 'text-sf-success', icon: 'bg-sf-success', badge: 'bg-sf-success/20 text-sf-charcoal' } :
-              insight.source === 'Meta' ? { bg: 'bg-sf-red/10', text: 'text-sf-accent', icon: 'bg-sf-red', badge: 'bg-sf-red/20 text-sf-accent' } :
+              insight.source === 'Meta' ? { bg: 'bg-sf-blue/10', text: 'text-sf-accent', icon: 'bg-sf-blue', badge: 'bg-sf-blue/20 text-sf-accent' } :
               insight.source === 'GA4' ? { bg: 'bg-sf-warning/10', text: 'text-sf-warning', icon: 'bg-sf-warning', badge: 'bg-sf-warning/20 text-sf-warning' } :
               { bg: 'bg-sf-blueLight/10', text: 'text-sf-blueLight', icon: 'bg-sf-blueLight', badge: 'bg-sf-blueLight/20 text-sf-blueLight' };
 
@@ -316,7 +316,7 @@ export default function DataLayer() {
             const InsightIcon = insight.IconComponent || Lightbulb;
 
             return (
-              <div key={idx} className={`relative ${colorScheme.bg} rounded-xl p-3 sm:p-5 border border-sf-dark hover:border-sf-red/30 transition-all duration-300`}>
+              <div key={idx} className={`relative ${colorScheme.bg} rounded-xl p-3 sm:p-5 border border-sf-dark hover:border-sf-blue/30 transition-all duration-300`}>
                 <div className="flex items-start gap-2 sm:gap-4">
                   <div className={`w-9 h-9 sm:w-12 sm:h-12 ${colorScheme.icon} rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0`}>
                     <InsightIcon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
@@ -340,20 +340,20 @@ export default function DataLayer() {
         </div>
 
         {/* Multi-Source Analysis - Full Width at Bottom */}
-        <div className="relative bg-gradient-to-r from-sf-red/20 to-sf-blueLight/20 rounded-xl p-3 sm:p-6 border border-sf-red/30">
+        <div className="relative bg-gradient-to-r from-sf-blue/20 to-sf-blueLight/20 rounded-xl p-3 sm:p-6 border border-sf-blue/30">
           <div className="flex items-start gap-2 sm:gap-4">
-            <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-sf-red to-sf-blueLight rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-sf-blue to-sf-blueLight rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
               <Layers className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                 <p className="text-xs sm:text-sm font-bold text-sf-accent uppercase tracking-wider">{multiSourceInsight.source}</p>
-                <span className="bg-sf-red/30 text-sf-accent px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold">
+                <span className="bg-sf-blue/30 text-sf-accent px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold">
                   Consolidado
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-sf-lightGray leading-relaxed mb-2 sm:mb-3">{multiSourceInsight.text}</p>
-              <div className="bg-sf-charcoal/50 rounded-lg p-2 sm:p-3 border border-sf-red/20">
+              <div className="bg-sf-charcoal/50 rounded-lg p-2 sm:p-3 border border-sf-blue/20">
                 <p className="text-xs sm:text-sm text-sf-success font-semibold flex items-start sm:items-center gap-1.5 sm:gap-2">
                   <Lightbulb className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 sm:mt-0" />
                   <span>{multiSourceInsight.recommendation}</span>
@@ -361,12 +361,12 @@ export default function DataLayer() {
               </div>
             </div>
           </div>
-          <div className="absolute top-0 left-0 w-1 sm:w-1.5 h-full bg-gradient-to-b from-sf-red to-sf-blueLight rounded-l-xl"></div>
+          <div className="absolute top-0 left-0 w-1 sm:w-1.5 h-full bg-gradient-to-b from-sf-blue to-sf-blueLight rounded-l-xl"></div>
         </div>
       </div>
 
       {/* Google Trends Section */}
-      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-blue/10">
         <button
           onClick={() => toggleSection('trends')}
           className="w-full bg-sf-blueLight text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
@@ -396,7 +396,7 @@ export default function DataLayer() {
 
             <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
               <table className="w-full min-w-[400px]">
-                <thead className="bg-sf-dark border-b border-sf-red/20">
+                <thead className="bg-sf-dark border-b border-sf-blue/20">
                   <tr>
                     <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Keyword</th>
                     <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Interés</th>
@@ -440,7 +440,7 @@ export default function DataLayer() {
       </div>
 
       {/* TikTok Section */}
-      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-blue/10">
         <button
           onClick={() => toggleSection('tiktok')}
           className="w-full bg-sf-success text-sf-charcoal p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
@@ -473,7 +473,7 @@ export default function DataLayer() {
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[450px]">
-                  <thead className="bg-sf-dark border-b border-sf-red/20">
+                  <thead className="bg-sf-dark border-b border-sf-blue/20">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Hashtag</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Views</th>
@@ -498,7 +498,7 @@ export default function DataLayer() {
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-semibold rounded-full ${
                             tag.region === 'Perú' ? 'bg-sf-success/20 text-sf-success' :
-                            tag.region === 'LATAM' ? 'bg-sf-red/20 text-sf-accent' :
+                            tag.region === 'LATAM' ? 'bg-sf-blue/20 text-sf-accent' :
                             'bg-sf-dark text-sf-textGray'
                           }`}>
                             <Globe className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
@@ -531,7 +531,7 @@ export default function DataLayer() {
                         <p className="text-[10px] sm:text-xs text-sf-textGray">{sound.type}</p>
                         <div className="flex items-center gap-1.5 sm:gap-2 mt-0.5 sm:mt-1">
                           <span className="text-[10px] sm:text-xs font-medium text-sf-success">{sound.usage}</span>
-                          <span className="text-[10px] sm:text-xs text-sf-red">{sound.trend}</span>
+                          <span className="text-[10px] sm:text-xs text-sf-blue">{sound.trend}</span>
                         </div>
                       </div>
                     </div>
@@ -544,10 +544,10 @@ export default function DataLayer() {
       </div>
 
       {/* Meta Section */}
-      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-blue/10">
         <button
           onClick={() => toggleSection('meta')}
-          className="w-full bg-sf-red text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-sf-blue text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
             <Share2 className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
@@ -561,7 +561,7 @@ export default function DataLayer() {
 
         {expandedSections.meta && (
           <div className="p-3 sm:p-6 space-y-4 sm:space-y-6 bg-sf-charcoal">
-            <div className="bg-sf-red/10 border border-sf-red/30 rounded-lg p-3 sm:p-4 flex gap-2 sm:gap-3">
+            <div className="bg-sf-blue/10 border border-sf-blue/30 rounded-lg p-3 sm:p-4 flex gap-2 sm:gap-3">
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-sf-accent flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-sf-lightGray">
                 <p className="font-semibold mb-1 text-sf-accent">Cómo se calcula el score:</p>
@@ -577,7 +577,7 @@ export default function DataLayer() {
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[500px]">
-                  <thead className="bg-sf-dark border-b border-sf-red/20">
+                  <thead className="bg-sf-dark border-b border-sf-blue/20">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Tema</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Menc.</th>
@@ -625,7 +625,7 @@ export default function DataLayer() {
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[500px]">
-                  <thead className="bg-sf-dark border-b border-sf-red/20">
+                  <thead className="bg-sf-dark border-b border-sf-blue/20">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Campaña</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase hidden sm:table-cell">Platf.</th>
@@ -671,7 +671,7 @@ export default function DataLayer() {
       </div>
 
       {/* GA4 Section */}
-      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl shadow-lg overflow-hidden border border-sf-blue/10">
         <button
           onClick={() => toggleSection('ga4')}
           className="w-full bg-sf-warning text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
@@ -711,7 +711,7 @@ export default function DataLayer() {
                   <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-sf-textGray" />
                   <p className="text-[10px] sm:text-xs text-sf-textGray">Compras</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-sf-red">9,340</p>
+                <p className="text-lg sm:text-xl font-bold text-sf-blue">9,340</p>
                 <p className="text-[10px] sm:text-xs text-sf-success">+45%</p>
               </div>
               <div className="bg-sf-dark rounded-lg p-3 sm:p-4">
@@ -736,7 +736,7 @@ export default function DataLayer() {
                     <span className="text-xs sm:text-sm text-sf-textGray">Mobile</span>
                     <div className="flex items-center gap-1.5 sm:gap-2">
                       <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-sf-charcoal rounded-full overflow-hidden">
-                        <div className="h-full bg-sf-red rounded-full" style={{ width: '78%' }}></div>
+                        <div className="h-full bg-sf-blue rounded-full" style={{ width: '78%' }}></div>
                       </div>
                       <span className="text-xs sm:text-sm font-bold text-white w-8 text-right">78%</span>
                     </div>
@@ -770,7 +770,7 @@ export default function DataLayer() {
                 <div className="space-y-1.5 sm:space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-sf-textGray">Social Media</span>
-                    <span className="text-xs sm:text-sm font-bold text-sf-red">35%</span>
+                    <span className="text-xs sm:text-sm font-bold text-sf-blue">35%</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-sf-textGray">Orgánico</span>
@@ -800,7 +800,7 @@ export default function DataLayer() {
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[550px]">
-                  <thead className="bg-sf-dark border-b border-sf-red/20">
+                  <thead className="bg-sf-dark border-b border-sf-blue/20">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Página</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-sf-textGray uppercase">Vistas</th>
@@ -829,7 +829,7 @@ export default function DataLayer() {
                           <span className={`text-xs sm:text-sm ${page.bounceRate <= 30 ? 'text-sf-success' : page.bounceRate <= 40 ? 'text-sf-warning' : 'text-red-400'}`}>{page.bounceRate}%</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
-                          <span className="text-xs sm:text-sm font-bold text-sf-red">{page.conversions}</span>
+                          <span className="text-xs sm:text-sm font-bold text-sf-blue">{page.conversions}</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className={`text-xs sm:text-sm font-bold ${page.convRate >= 2.5 ? 'text-sf-success' : 'text-white'}`}>{page.convRate}%</span>
@@ -845,7 +845,7 @@ export default function DataLayer() {
       </div>
 
       {/* Keywords Reference */}
-      <div className="bg-sf-red rounded-xl p-4 sm:p-6 text-white">
+      <div className="bg-sf-blue rounded-xl p-4 sm:p-6 text-white">
         <h3 className="text-sm sm:text-base font-bold mb-3 sm:mb-4 flex items-center gap-2">
           <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />
           Keywords Monitoreadas - San Fernando Perú

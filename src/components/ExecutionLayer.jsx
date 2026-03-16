@@ -16,7 +16,7 @@ export default function ExecutionLayer() {
   return (
     <div className="space-y-4 sm:space-y-6 lg:space-y-8">
       {/* Header */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-blue/10">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
           <div>
             <h2 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
@@ -40,7 +40,7 @@ export default function ExecutionLayer() {
       </div>
 
       {/* Budget Overview */}
-      <div className="bg-sf-red text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
+      <div className="bg-sf-blue text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 sm:gap-6 mb-6 sm:mb-8">
           <div className="flex items-center gap-3 sm:gap-4">
             <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/20 rounded-xl sm:rounded-2xl flex items-center justify-center">
@@ -79,7 +79,7 @@ export default function ExecutionLayer() {
       </div>
 
       {/* Budget by Category */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-blue/10">
         <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4 sm:mb-6">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-blue rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
             <Target className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -107,7 +107,7 @@ export default function ExecutionLayer() {
       </div>
 
       {/* Budget by Objective */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-blue/10">
         <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4 sm:mb-6">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-accent rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
             <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -130,7 +130,7 @@ export default function ExecutionLayer() {
       </div>
 
       {/* Optimization Recommendations */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-blue/10">
         <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4 sm:mb-6">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-warning rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
             <AlertTriangle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -185,10 +185,10 @@ export default function ExecutionLayer() {
       </div>
 
       {/* Categories Performance */}
-      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-red/10">
+      <div className="bg-sf-dark rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-sf-blue/10">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-red rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-sf-blue rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
               <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
@@ -201,12 +201,12 @@ export default function ExecutionLayer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           {CATEGORIAS_PERFORMANCE.map((cat, idx) => (
             <div key={cat.id} className={`p-3 sm:p-4 lg:p-5 rounded-lg sm:rounded-xl border-2 ${
-              idx < 2 ? 'bg-sf-red/5 border-sf-red/30' : 'bg-sf-charcoal border-sf-dark'
+              idx < 2 ? 'bg-sf-blue/5 border-sf-blue/30' : 'bg-sf-charcoal border-sf-dark'
             }`}>
               <div className="flex items-center justify-between mb-2 sm:mb-3">
                 <h4 className="font-bold text-white text-sm sm:text-base">{cat.nombre}</h4>
                 {idx < 2 && (
-                  <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-sf-red/20 text-sf-red flex items-center gap-1">
+                  <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-sf-blue/20 text-sf-blue flex items-center gap-1">
                     <Star className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> TOP
                   </span>
                 )}
@@ -227,7 +227,7 @@ export default function ExecutionLayer() {
                 </div>
                 <div className="flex justify-between text-xs sm:text-sm">
                   <span className="text-sf-textGray">CPA</span>
-                  <span className="font-semibold text-sf-red">S/ {cat.cpa_soles}</span>
+                  <span className="font-semibold text-sf-blue">S/ {cat.cpa_soles}</span>
                 </div>
               </div>
 
