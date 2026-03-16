@@ -1,0 +1,125 @@
+{
+  "client": "sanfernando",
+  "clientFullName": "San Fernando S.A.",
+  "language": "es",
+  "country": "PE",
+  "geo": "PE",
+  "category": "Food & Drink",
+  "timeRange": "today 3-m",
+  "outputDir": "sanfernando",
+
+  "keywords": [
+    "San Fernando Peru",
+    "nuggets pollo Peru",
+    "hot dog pollo Peru",
+    "hamburguesa pollo congelada",
+    "delivery pollo Lima",
+    "embutidos Peru",
+    "pavita Peru",
+    "pollo fresco Lima",
+    "salchicha de pollo Peru",
+    "huevos frescos Lima"
+  ],
+
+  "tiktok": {
+    "industry": "Food & Cooking",
+    "timeRange": "30",
+    "resultsPerPage": 20,
+    "hashtags": [
+      "#SanFernando",
+      "#PolloSanFernando",
+      "#NuggetsReceta",
+      "#RecetasPeruanas",
+      "#LaBuenaFamilia",
+      "#FoodPeru",
+      "#HamburguesaPollo",
+      "#LonchePerfecto"
+    ]
+  },
+
+  "facebook_pages": [
+    "SanFernandoOficial",
+    "RedondosPeru",
+    "OttoKunzPeru",
+    "BraedtPeru"
+  ],
+
+  "instagram_accounts": [
+    "sanfernandoperu",
+    "redondosperu",
+    "ottokunzperu"
+  ],
+
+  "social_listening_topics": [
+    {
+      "name": "Recetas con pollo y embutidos",
+      "keywords": ["receta pollo", "receta nuggets", "receta hamburguesa", "receta hot dog", "lonchera", "almuerzo facil", "cena rapida", "receta pavita"],
+      "brands": ["San Fernando", "Redondos", "Otto Kunz"]
+    },
+    {
+      "name": "Delivery y Ecommerce Alimentos",
+      "keywords": ["delivery pollo", "delivery carnes", "comprar online", "pedir a domicilio", "delivery express", "delivery Lima", "delivery alimentos"],
+      "brands": ["San Fernando", "Rappi", "PedidosYa"]
+    },
+    {
+      "name": "Nutricion y Alimentacion Familiar",
+      "keywords": ["proteina", "nutricion ninos", "lonchera nutritiva", "sin octogonos", "hierro", "alimentacion saludable", "comida casera"],
+      "brands": ["San Fernando", "La Calera"]
+    },
+    {
+      "name": "Congelados y Embutidos Peru",
+      "keywords": ["nuggets", "hamburguesa congelada", "hot dog", "salchicha", "chorizo", "embutidos pollo", "congelados", "productos congelados"],
+      "brands": ["San Fernando", "Otto Kunz", "Braedt", "Razzeto"]
+    },
+    {
+      "name": "Temporada Escolar y Loncheras",
+      "keywords": ["lonchera escolar", "lonchera ninos", "inicio clases", "vuelta al cole", "snack escolar", "merienda", "lonchera saludable"],
+      "brands": ["San Fernando", "Otto Kunz"]
+    }
+  ],
+
+  "meta": {
+    "maxPostsPerPage": 50,
+    "includeComments": true,
+    "maxCommentsPerPost": 20,
+    "timeframeDays": 30,
+    "language": "es"
+  },
+
+  "competitors": [
+    {
+      "name": "Redondos",
+      "facebook": "https://www.facebook.com/RedondosPeru",
+      "instagram": "https://www.instagram.com/redondosperu"
+    },
+    {
+      "name": "Otto Kunz",
+      "facebook": "https://www.facebook.com/OttoKunzPeru",
+      "instagram": "https://www.instagram.com/ottokunzperu"
+    },
+    {
+      "name": "Braedt",
+      "facebook": "https://www.facebook.com/BraedtPeru",
+      "instagram": "https://www.instagram.com/braedtperu"
+    },
+    {
+      "name": "Santa Elena",
+      "facebook": "https://www.facebook.com/SantaElenaPeru",
+      "instagram": "https://www.instagram.com/santaelenaperu"
+    },
+    {
+      "name": "La Calera",
+      "facebook": "https://www.facebook.com/LaCaleraHuevos",
+      "instagram": "https://www.instagram.com/lacalerahuevos"
+    }
+  ],
+
+  "maxResults": 50,
+  "scheduleCron": "0 6 * * 1",
+
+  "metadata": {
+    "market": "Lima Metropolitana + Arequipa, Trujillo, Piura",
+    "product": "Proteina animal: Congelados, Embutidos, Carnicos, Huevos",
+    "slogan": "La Buena Familia"
+  }
+}

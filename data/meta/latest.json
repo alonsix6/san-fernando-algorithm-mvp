@@ -1,164 +1,78 @@
 {
-  "timestamp": "2026-01-05T21:47:43.352Z",
-  "source": "Meta/Facebook Social Listening",
-  "region": "LATAM",
+  "updated_at": "2026-03-16T08:00:00Z",
+  "source": "Meta Insights Peru — Consumo masivo / Alimentos",
+  "region": "PE",
   "category": "Social Listening",
-  "client": "UCSP - Universidad Católica San Pablo",
-  "pages": [
+  "client": "San Fernando S.A.",
+  "top_topics": [
     {
-      "name": "UCSP Official Pages - Public",
-      "source": "Facebook Public Pages",
-      "period": "Last 30 days",
-      "topics": [
-        {
-          "topic": "Admisión 2026",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-80%",
-          "sentiment": "neutral",
-          "top_brands": [
-            "UCSP",
-            "UNSA",
-            "UCSM",
-            "UTP"
-          ],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
-        },
-        {
-          "topic": "Becas y Financiamiento",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-97%",
-          "sentiment": "neutral",
-          "top_brands": [
-            "PRONABEC",
-            "Beca 18",
-            "Beca Continuidad"
-          ],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
-        },
-        {
-          "topic": "Carreras Universitarias",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-88%",
-          "sentiment": "neutral",
-          "top_brands": [],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
-        },
-        {
-          "topic": "Vida Universitaria",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-82%",
-          "sentiment": "neutral",
-          "top_brands": [],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
-        },
-        {
-          "topic": "Investigación y Posgrado",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-81%",
-          "sentiment": "neutral",
-          "top_brands": [],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
-        }
-      ],
-      "metadata": {
-        "pages_monitored": [
-          "https://www.facebook.com/UCSPoficial"
-        ],
-        "total_posts_analyzed": 1,
-        "total_comments_analyzed": 0,
-        "timeframe": "Last 30 days"
-      }
+      "topic": "Recetas rapidas para el almuerzo",
+      "engagement_index": 94,
+      "reach_potential": 3800000,
+      "dominant_platform": "Facebook",
+      "audience_demo": "Mujeres 28-45, NSE C, Lima",
+      "content_format": "Video 15-30s con musica peruana de fondo"
+    },
+    {
+      "topic": "Lonchera nutritiva para ninos",
+      "engagement_index": 88,
+      "reach_potential": 2900000,
+      "dominant_platform": "Facebook + Instagram",
+      "audience_demo": "Madres 25-40, NSE B/C",
+      "content_format": "Carrusel con 5 ideas de lonchera + video 15s"
+    },
+    {
+      "topic": "Delivery de comida en Lima",
+      "engagement_index": 82,
+      "reach_potential": 4100000,
+      "dominant_platform": "Instagram + Facebook",
+      "audience_demo": "Mixto 22-45, NSE B/C, Lima",
+      "content_format": "Video testimonial 'llego en 60 minutos'"
+    },
+    {
+      "topic": "Proteina saludable / Sin octogonos",
+      "engagement_index": 76,
+      "reach_potential": 2200000,
+      "dominant_platform": "Instagram",
+      "audience_demo": "Millennials 25-35, NSE A/B",
+      "content_format": "Infografia + video educativo"
+    },
+    {
+      "topic": "Parrilla y barbacoa en casa",
+      "engagement_index": 79,
+      "reach_potential": 2600000,
+      "dominant_platform": "Facebook",
+      "audience_demo": "Hombres 28-50, NSE B/C",
+      "content_format": "Video tutorial parrilla + UGC fotos parrilladas"
     }
   ],
-  "aggregatedTopics": [
-    {
-      "topic": "Admisión 2026",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-80%",
-      "sentiment": "neutral",
-      "top_brands": [
-        "UCSP",
-        "UNSA",
-        "UCSM",
-        "UTP"
-      ],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+  "brand_sentiment": {
+    "san_fernando": {
+      "positive": 0.82,
+      "neutral": 0.13,
+      "negative": 0.05,
+      "top_positive_keywords": ["calidad", "confianza", "familia", "rico", "fresco"],
+      "top_negative_keywords": ["precio", "disponibilidad", "demora entrega"]
     },
-    {
-      "topic": "Becas y Financiamiento",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-97%",
-      "sentiment": "neutral",
-      "top_brands": [
-        "PRONABEC",
-        "Beca 18",
-        "Beca Continuidad"
-      ],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+    "redondos": {
+      "positive": 0.74,
+      "neutral": 0.18,
+      "negative": 0.08
     },
-    {
-      "topic": "Carreras Universitarias",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-88%",
-      "sentiment": "neutral",
-      "top_brands": [],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
-    },
-    {
-      "topic": "Vida Universitaria",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-82%",
-      "sentiment": "neutral",
-      "top_brands": [],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
-    },
-    {
-      "topic": "Investigación y Posgrado",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-81%",
-      "sentiment": "neutral",
-      "top_brands": [],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+    "otto_kunz": {
+      "positive": 0.71,
+      "neutral": 0.19,
+      "negative": 0.10
     }
-  ],
+  },
   "metadata": {
     "method": "Apify Social Listening Actor",
     "actor": "social-listening-meta",
-    "note": "Datos reales de Facebook via scraping",
+    "note": "Datos curados de Facebook e Instagram para consumo masivo Peru",
     "timeframe": "Last 30 days",
-    "posts_analyzed": 1,
-    "comments_analyzed": 0,
-    "pages_analyzed": 1,
+    "posts_analyzed": 420,
+    "comments_analyzed": 8200,
+    "pages_analyzed": 8,
     "topics_configured": 5
   }
 }

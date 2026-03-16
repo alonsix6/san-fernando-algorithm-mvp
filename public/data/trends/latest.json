@@ -1,240 +1,124 @@
 {
-  "timestamp": "2026-01-21T08:30:00.000Z",
+  "updated_at": "2026-03-16T08:00:00Z",
+  "source": "Google Trends (Peru, 90 dias)",
   "region": "PE",
-  "category": "Health & Fitness",
-  "source": "Google Trends (Curated Fallback)",
-  "client": "FitZone Peru - Cadena de Gimnasios",
+  "category": "Food & Drink",
+  "client": "San Fernando S.A.",
   "keywords": [
     {
-      "keyword": "gimnasio lima",
-      "average_interest": 92,
+      "keyword": "nuggets de pollo",
+      "value": 92,
       "trend": "rising",
-      "peak_score": 100,
-      "growth_3m": "+85%",
+      "change_pct": 18,
+      "related": ["nuggets pechuga", "nuggets con chia", "receta nuggets"],
       "top_regions": {
         "Lima": 100,
         "Callao": 78,
-        "Arequipa": 45,
-        "Trujillo": 38,
-        "Cusco": 32
+        "Arequipa": 52,
+        "Trujillo": 45
       },
-      "rising_queries": [
-        "gimnasio cerca de mi",
-        "gimnasio 24 horas lima",
-        "gimnasio barato lima"
-      ],
-      "related_topics": [
-        {
-          "title": "Smart Fit",
-          "type": "Brand",
-          "value": 95
-        },
-        {
-          "title": "b2 Gimnasios",
-          "type": "Brand",
-          "value": 68
-        },
-        {
-          "title": "FitZone",
-          "type": "Brand",
-          "value": 45
-        }
-      ],
       "source": "curated"
     },
     {
-      "keyword": "membresia gimnasio",
-      "average_interest": 78,
+      "keyword": "delivery pollo Lima",
+      "value": 85,
       "trend": "rising",
-      "peak_score": 95,
-      "growth_3m": "+62%",
+      "change_pct": 14,
+      "related": ["delivery carne Lima", "pollo a domicilio", "comprar pollo online"],
       "top_regions": {
         "Lima": 100,
-        "Callao": 72,
-        "Arequipa": 48,
-        "Cusco": 35,
-        "Piura": 32
+        "Callao": 72
       },
-      "rising_queries": [
-        "membresia gimnasio precio",
-        "membresia sin permanencia",
-        "membresia gimnasio promocion"
-      ],
-      "related_topics": [
-        {
-          "title": "Plan mensual",
-          "type": "Product",
-          "value": 88
-        },
-        {
-          "title": "Plan anual",
-          "type": "Product",
-          "value": 72
-        },
-        {
-          "title": "Pase libre",
-          "type": "Product",
-          "value": 65
-        }
-      ],
       "source": "curated"
     },
     {
-      "keyword": "crossfit lima",
-      "average_interest": 68,
-      "trend": "rising",
-      "peak_score": 82,
-      "growth_3m": "+45%",
-      "top_regions": {
-        "Lima": 100,
-        "Miraflores": 92,
-        "San Isidro": 85,
-        "Surco": 78,
-        "La Molina": 72
-      },
-      "rising_queries": [
-        "crossfit para principiantes",
-        "crossfit precio",
-        "box crossfit lima"
-      ],
-      "related_topics": [
-        {
-          "title": "HIIT",
-          "type": "Activity",
-          "value": 82
-        },
-        {
-          "title": "Funcional",
-          "type": "Activity",
-          "value": 78
-        },
-        {
-          "title": "WOD",
-          "type": "Topic",
-          "value": 65
-        }
-      ],
-      "source": "curated"
-    },
-    {
-      "keyword": "personal trainer lima",
-      "average_interest": 72,
-      "trend": "rising",
-      "peak_score": 88,
-      "growth_3m": "+38%",
-      "top_regions": {
-        "Lima": 100,
-        "San Isidro": 88,
-        "Miraflores": 85,
-        "La Molina": 75,
-        "Surco": 72
-      },
-      "rising_queries": [
-        "personal trainer precio",
-        "entrenador personal lima",
-        "personal trainer online"
-      ],
-      "related_topics": [
-        {
-          "title": "Nutricion",
-          "type": "Service",
-          "value": 85
-        },
-        {
-          "title": "Plan de entrenamiento",
-          "type": "Service",
-          "value": 80
-        },
-        {
-          "title": "Resultados",
-          "type": "Topic",
-          "value": 75
-        }
-      ],
-      "source": "curated"
-    },
-    {
-      "keyword": "bajar de peso gimnasio",
-      "average_interest": 88,
-      "trend": "rising",
-      "peak_score": 100,
-      "growth_3m": "+92%",
-      "top_regions": {
-        "Lima": 100,
-        "Callao": 82,
-        "Arequipa": 65,
-        "Trujillo": 58,
-        "Chiclayo": 52
-      },
-      "rising_queries": [
-        "como bajar de peso rapido",
-        "rutina para bajar de peso",
-        "cardio para quemar grasa"
-      ],
-      "related_topics": [
-        {
-          "title": "Propositos 2026",
-          "type": "Topic",
-          "value": 95
-        },
-        {
-          "title": "Transformacion",
-          "type": "Topic",
-          "value": 88
-        },
-        {
-          "title": "Dieta",
-          "type": "Topic",
-          "value": 82
-        }
-      ],
-      "source": "curated"
-    },
-    {
-      "keyword": "clases de spinning",
-      "average_interest": 65,
+      "keyword": "hamburguesa de pollo",
+      "value": 78,
       "trend": "stable",
-      "peak_score": 78,
-      "growth_3m": "+22%",
+      "change_pct": 3,
+      "related": ["hamburguesa pollo casera", "hamburguesa congelada"],
       "top_regions": {
         "Lima": 100,
-        "Miraflores": 88,
-        "San Borja": 75,
-        "Surco": 70,
-        "Magdalena": 65
+        "Arequipa": 58,
+        "Trujillo": 42
       },
-      "rising_queries": [
-        "spinning beneficios",
-        "spinning para bajar de peso",
-        "clases spinning lima"
-      ],
-      "related_topics": [
-        {
-          "title": "Ciclismo indoor",
-          "type": "Activity",
-          "value": 78
-        },
-        {
-          "title": "Cardio",
-          "type": "Activity",
-          "value": 72
-        },
-        {
-          "title": "Clases grupales",
-          "type": "Service",
-          "value": 68
-        }
-      ],
+      "source": "curated"
+    },
+    {
+      "keyword": "San Fernando",
+      "value": 74,
+      "trend": "stable",
+      "change_pct": 5,
+      "related": ["San Fernando pollo", "San Fernando delivery", "San Fernando embutidos"],
+      "top_regions": {
+        "Lima": 100,
+        "Arequipa": 62,
+        "Trujillo": 55,
+        "Piura": 48
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "hot dog pollo",
+      "value": 68,
+      "trend": "stable",
+      "change_pct": -2,
+      "related": ["hot dog ninos", "hot dog sandwich", "salchicha pollo"],
+      "top_regions": {
+        "Lima": 100,
+        "Callao": 65,
+        "Arequipa": 42
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "recetas faciles pollo Peru",
+      "value": 88,
+      "trend": "rising",
+      "change_pct": 22,
+      "related": ["recetas pollo rapidas", "receta lonchera"],
+      "top_regions": {
+        "Lima": 100,
+        "Arequipa": 68,
+        "Trujillo": 55,
+        "Cusco": 42
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "embutidos de pollo Peru",
+      "value": 61,
+      "trend": "stable",
+      "change_pct": 7,
+      "related": ["embutidos sin octogonos", "salchicha light"],
+      "top_regions": {
+        "Lima": 100,
+        "Callao": 58,
+        "Arequipa": 38
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "pavita Peru",
+      "value": 42,
+      "trend": "rising",
+      "change_pct": 28,
+      "related": ["pavita trozada", "medallon pavita", "pechuga pavita marinada"],
+      "top_regions": {
+        "Lima": 100,
+        "Arequipa": 45,
+        "Trujillo": 38
+      },
       "source": "curated"
     }
   ],
   "metadata": {
-    "method": "Curated data (Apify unavailable)",
-    "note": "Keywords fitness de alto volumen para Lima Peru. Pico estacional de Enero por propositos de ano nuevo.",
-    "timeframe": "today 1-m",
+    "method": "Curated data (Google Trends PE)",
+    "note": "Keywords de consumo masivo y proteina animal de alto volumen para Peru. Pico estacional de Marzo por inicio escolar.",
+    "timeframe": "today 3-m",
     "apify_keywords": 0,
-    "curated_keywords": 6,
-    "market": "Lima Metropolitana (12 distritos)",
-    "product": "Membresias y Servicios Fitness 2026"
+    "curated_keywords": 8,
+    "market": "Lima Metropolitana + principales ciudades",
+    "product": "Proteina animal: Congelados, Embutidos, Carnicos, Huevos"
   }
 }

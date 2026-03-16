@@ -1,242 +1,247 @@
-// Keywords y hashtags para FitZone - Cadena de gimnasios Peru
+// Keywords y hashtags para San Fernando S.A. - Consumo masivo / Proteina animal Peru
 // Configuracion completa para busquedas y monitoreo social
 
-export const KEYWORDS_FITZONE = {
-  // Marca FitZone
-  marca: [
-    'fitzone peru',
-    'fitzone gimnasio',
-    'fitzone miraflores',
-    'fitzone precio',
-    'fitzone membresia',
-    'fitzone san isidro',
-    'fitzone surco',
-    'fitzone promocion',
-    'fitzone horarios',
-    'fitzone clases',
+// ============================================================================
+// KEYWORDS POR CATEGORIA — Google Trends & Search
+// ============================================================================
+export const KEYWORDS = {
+  brand: [
+    'San Fernando',
+    'San Fernando pollo',
+    'San Fernando embutidos',
+    'delivery San Fernando',
+    'San Fernando nuggets',
+    'San Fernando hot dog',
+    'La Buena Familia',
+    'sanfernando.pe',
+    'delivery.sanfernando.pe',
   ],
 
-  // Keywords de categoria
-  categoria: [
-    'gimnasio lima',
-    'gym cerca de mi',
-    'mejor gimnasio lima',
-    'gimnasio precio mensual',
-    'membresia gimnasio',
-    'gimnasio barato lima',
-    'gimnasio miraflores',
-    'gimnasio san isidro',
-    'gimnasio surco',
-    'gimnasio premium lima',
+  // CONGELADOS
+  congelados: [
+    'nuggets de pollo',
+    'nuggets pechuga pollo',
+    'hamburguesas de pollo',
+    'hamburguesas congeladas Peru',
+    'nuggets con chia',
+    'hot dog pavita',
+    'choriburguer',
+    'productos congelados Peru',
+    'congelados para ninos',
+    'milanesa de pollo congelada',
   ],
 
-  // Intencion de compra alta
-  intencion: [
-    'inscripcion gimnasio',
-    'promocion gimnasio enero',
-    'gimnasio sin matricula',
-    'gimnasio 24 horas lima',
-    'gimnasio con piscina lima',
-    'gimnasio cerca a mi ubicacion',
-    'precio gimnasio mensual lima',
-    'membresia gym lima',
-    'oferta gimnasio lima',
-    'gimnasio prueba gratis',
+  // EMBUTIDOS
+  embutidos: [
+    'hot dog pollo Peru',
+    'salchicha de pollo',
+    'jamonada Peru',
+    'chorizo parrillero Peru',
+    'jamon sandwich Peru',
+    'Frankfurt Peru',
+    'embutidos de pollo',
+    'salchicha para lonchera',
+    'embutidos sin octogonos',
   ],
 
-  // Keywords de servicios
-  servicios: [
-    'clases spinning lima',
-    'yoga miraflores',
-    'crossfit lima precio',
-    'personal trainer lima',
-    'funcional training lima',
-    'pilates reformer lima',
-    'clases grupales gimnasio',
-    'entrenador personal precio',
-    'hiit clases lima',
-    'zumba lima',
+  // CARNICOS
+  carnicos: [
+    'pollo fresco Lima',
+    'pollo para el brasa Lima',
+    'pechuga de pollo precio',
+    'delivery pollo Lima',
+    'pollo entero Lima',
+    'pavita peruana',
+    'medallon pavita',
+    'cerdo fresco Lima',
+    'chuleta de cerdo',
+    'pechuga marinada',
   ],
 
-  // Competencia
-  competidores: [
-    'smart fit peru',
-    'smart fit precio',
-    'b2 gimnasio',
-    'b2 gimnasio precio',
-    'bio ritmo gimnasio',
-    'sportlife peru',
-    'ko urban lima',
-    'gimnasio vs smart fit',
-    'alternativa smart fit',
-    'mejor que smart fit',
+  // HUEVOS
+  huevos: [
+    'huevos frescos Lima',
+    'huevos San Fernando',
+    'huevos por mayor Lima',
+    'precio huevos Peru 2025',
+    'huevos nutritivos',
   ],
 
-  // Disciplinas fitness
-  disciplinas: [
-    'crossfit lima',
-    'funcional lima',
-    'spinning lima',
-    'yoga lima',
-    'pilates lima',
-    'boxeo fitness lima',
-    'hiit lima',
-    'entrenamiento fuerza',
-    'musculacion lima',
-    'cardio lima',
+  // ECOMMERCE
+  ecommerce: [
+    'delivery pollo Lima',
+    'comprar pollo online Lima',
+    'delivery San Fernando',
+    'pedir pollo a domicilio',
+    'delivery carnes Lima',
+    'delivery express carnes',
   ],
 
-  // Resultados/transformacion
-  resultados: [
-    'bajar de peso gimnasio',
-    'ganar musculo gym',
-    'transformacion fitness',
-    'antes y despues gym',
-    'resultados gimnasio',
-    'rutina para principiantes',
-    'como empezar gym',
-    'dieta y gimnasio',
-    'perder grasa gym',
-    'tonificar cuerpo',
+  // RECETAS / CONTENT (oportunidad de SEO y TikTok)
+  recetas: [
+    'recetas con pollo faciles',
+    'receta nuggets caseros',
+    'receta hamburguesa pollo',
+    'recetas con pavita',
+    'recetas peruanas con pollo',
+    'como preparar hot dog',
+    'lonchera ninos Peru',
+    'recetas rapidas Peru',
   ],
 
-  // Geografias Lima
-  geografias: [
-    'gimnasio miraflores',
-    'gimnasio san isidro',
-    'gimnasio surco',
-    'gimnasio la molina',
-    'gimnasio san borja',
-    'gimnasio magdalena',
-    'gimnasio jesus maria',
-    'gimnasio lince',
-    'gimnasio los olivos',
-    'gimnasio lima norte',
+  // COMPETIDORES (monitoreo)
+  competitors: [
+    'Redondos pollo',
+    'Otto Kunz embutidos',
+    'Braedt embutidos',
+    'La Segoviana',
+    'Rico Pollo Arequipa',
+    'Razzeto embutidos',
+    'La Calera huevos',
+    'Santa Elena pollo',
   ],
 };
 
-export const HASHTAGS_FITZONE = {
-  // Core (usar siempre)
-  core: [
-    '#gymtok',
-    '#fitnessperu',
-    '#gimnasio',
-    '#gym',
-    '#fitness',
-    '#FitZone',
-    '#FitZonePeru',
+// ============================================================================
+// HASHTAGS POR PLATAFORMA
+// ============================================================================
+export const HASHTAGS = {
+  // INSTAGRAM - San Fernando branded
+  instagram_branded: [
+    '#SanFernando',
+    '#LaBuenaFamilia',
+    '#SanFernandoPeru',
+    '#AlimentarMejor',
+    '#PolloSanFernando',
+    '#EmbutidosSanFernando',
+    '#NuggetsSanFernando',
+    '#PunchangLaVida',
   ],
 
-  // Engagement (rotar)
-  engagement: [
+  // INSTAGRAM - Categoria / sector
+  instagram_category: [
+    '#RecetasPeruanas',
+    '#ComiendoRicoPeru',
+    '#GastronomiaPeru',
+    '#FoodPeru',
+    '#RecetasFaciles',
+    '#ComidasPeruanas',
+    '#PolloFresco',
+    '#LonchesPeruanos',
+    '#DesayunoPeruano',
+    '#CenaFamiliarPeru',
+    '#ProteinaSana',
+    '#ComidaCasera',
+  ],
+
+  // INSTAGRAM - Volumen alto (amplificacion)
+  instagram_volume: [
+    '#Peru',
+    '#Lima',
+    '#Food',
+    '#Foodie',
+    '#Familia',
+    '#RecetaDelDia',
+    '#CocinandoEnCasa',
+    '#PlatosPeruanos',
+    '#CocinaPeruana',
+  ],
+
+  // TIKTOK - Principal
+  tiktok_main: [
+    '#SanFernando',
+    '#PolloSanFernando',
+    '#RecetasTikTok',
+    '#FoodTikTok',
+    '#RecetaFacil',
+    '#CocinandoContigo',
+    '#LaBuenaFamilia',
+    '#NuggetsDePechuga',
+    '#DeliciosaFamilia',
+  ],
+
+  // TIKTOK - Tendencia Peru (volumen + relevancia)
+  tiktok_peru_trending: [
+    '#PeruFood',
+    '#LimaFood',
+    '#ComidasPeruanas',
+    '#RecetasPeruanas',
+    '#FamiliaPeruana',
+    '#MamaPeruana',
+    '#CocinaPeru',
     '#fyp',
     '#parati',
     '#viral',
-    '#trending',
-    '#fypシ',
-    '#xyzbca',
+    '#Peru',
   ],
 
-  // Nicho fitness
-  fitness: [
-    '#legday',
-    '#glutesday',
-    '#transformacion',
-    '#gymrat',
-    '#fitfam',
-    '#gymmotivation',
-    '#workout',
-    '#fitnessmotivation',
-    '#gains',
-    '#bodybuilding',
+  // TIKTOK - Nichos de contenido
+  tiktok_niches: [
+    '#ComidaRapida',
+    '#CenaRica',
+    '#LoncheFamiliar',
+    '#HotDogReceta',
+    '#HamburguesaPollo',
+    '#NuggetsReceta',
+    '#EmbRecipe',
+    '#PolloConTodo',
+    '#CocinaFacilPeru',
   ],
 
-  // Local Peru
-  local: [
-    '#lima',
-    '#peru',
-    '#peruanos',
-    '#limalife',
-    '#miraflores',
-    '#sanisidro',
-    '#gymlima',
-    '#fitnessperu',
+  // AUDIENCIAS PERSONALIZADAS META — Intereses para targeting
+  meta_interest_audiences: [
+    'Gastronomia peruana',
+    'Cocina en casa',
+    'Nutricion infantil',
+    'Recetas rapidas',
+    'Supermercados en Peru',
+    'Compras online Peru',
+    'Yape',
+    'Rappi',
+    'PedidosYa',
+    'Familia peruana',
+    'Ama de casa',
+    'Lonchera escolar',
   ],
 
-  // Disciplinas
-  disciplinas: [
-    '#crossfit',
-    '#funcional',
-    '#hiit',
-    '#pilates',
-    '#yoga',
-    '#spinning',
-    '#boxeo',
-    '#cardio',
-    '#fuerza',
-    '#entrenamiento',
-  ],
-
-  // Transformaciones
-  transformaciones: [
-    '#antesydespues',
-    '#transformacion',
-    '#progreso',
-    '#fitjourney',
-    '#weightloss',
-    '#musclegain',
-    '#beforeandafter',
-    '#glow up',
-  ],
-
-  // Motivacion
-  motivacion: [
-    '#motivation',
-    '#gymlife',
-    '#nopainnogain',
-    '#nevergiveup',
-    '#disciplina',
-    '#constancia',
-    '#lifestyle',
-    '#healthylifestyle',
-  ],
-
-  // Competencia (monitoreo)
-  competencia: [
-    '#smartfit',
-    '#smartfitperu',
-    '#b2gimnasio',
-    '#kourban',
-    '#biorhythm',
+  // AUDIENCIAS DE COMPORTAMIENTO META
+  meta_behavior_audiences: [
+    'Compradores frecuentes online (Peru)',
+    'Usuarios de apps de delivery',
+    'Engaged shoppers',
+    'Padres con hijos 3-12 anos',
+    'Visitantes de sanfernando.pe (remarketing)',
+    'Anadieron al carrito sin comprar (remarketing)',
+    'Compradores similares (Lookalike 2%)',
   ],
 };
 
-// Combinar todos los hashtags
+// Combinar todos los hashtags principales
 export const ALL_HASHTAGS = [
-  ...HASHTAGS_FITZONE.core,
-  ...HASHTAGS_FITZONE.fitness,
-  ...HASHTAGS_FITZONE.local,
-  ...HASHTAGS_FITZONE.disciplinas,
-  ...HASHTAGS_FITZONE.transformaciones,
+  ...HASHTAGS.instagram_branded,
+  ...HASHTAGS.instagram_category,
+  ...HASHTAGS.tiktok_main,
+  ...HASHTAGS.tiktok_peru_trending,
 ];
 
 // Combinar keywords para Google Trends
 export const ALL_KEYWORDS = [
-  ...KEYWORDS_FITZONE.marca,
-  ...KEYWORDS_FITZONE.categoria,
-  ...KEYWORDS_FITZONE.intencion,
-  ...KEYWORDS_FITZONE.servicios,
+  ...KEYWORDS.brand,
+  ...KEYWORDS.congelados,
+  ...KEYWORDS.embutidos,
+  ...KEYWORDS.carnicos,
+  ...KEYWORDS.ecommerce,
 ];
 
-// Keywords de alta intencion (conversion)
+// Keywords de alta intencion (conversion ecommerce)
 export const HIGH_INTENT_KEYWORDS = [
-  ...KEYWORDS_FITZONE.intencion,
-  'inscripcion gimnasio',
-  'membresia gym',
-  'precio gimnasio',
-  'promocion gimnasio',
-  'gimnasio sin matricula',
-  'prueba gratis gimnasio',
+  ...KEYWORDS.ecommerce,
+  'delivery pollo Lima',
+  'comprar nuggets online',
+  'pedir San Fernando delivery',
+  'delivery carnes a domicilio',
+  'comprar embutidos online Lima',
+  'delivery express alimentos Lima',
 ];
 
 // Configuracion para Google Trends
@@ -245,8 +250,10 @@ export const GOOGLE_TRENDS_CONFIG = {
   region: 'PE',
   geo: {
     lima: 'PE-LIM',
+    arequipa: 'PE-ARE',
+    trujillo: 'PE-LAL',
   },
-  category: 44, // Health & Fitness
+  category: 71, // Food & Drink
   timeframe: 'now 7-d',
   refreshInterval: 3600000,
 };
@@ -254,187 +261,87 @@ export const GOOGLE_TRENDS_CONFIG = {
 // Configuracion para TikTok
 export const TIKTOK_CONFIG = {
   hashtags: [
-    ...HASHTAGS_FITZONE.core,
-    ...HASHTAGS_FITZONE.fitness.slice(0, 5),
-    ...HASHTAGS_FITZONE.local.slice(0, 3),
+    ...HASHTAGS.tiktok_main,
+    ...HASHTAGS.tiktok_peru_trending.slice(0, 5),
+    ...HASHTAGS.tiktok_niches.slice(0, 3),
   ],
   region: 'PE',
   metrics: ['views', 'likes', 'shares', 'comments'],
   trending_threshold: 10000,
-  sounds: [
-    { name: 'NEFFEX tracks', category: 'Workout Motivation' },
-    { name: 'Tevvez - Legend', category: 'Gymtok classic' },
-    { name: 'Bad Bunny hits', category: 'Reggaeton workout' },
-    { name: 'Phonk remixes', category: 'Powerlifting' },
-    { name: 'Eminem/2Pac workout', category: 'Hip Hop gym' },
+  content_types: [
+    { name: 'Recetas rapidas 30-60s', category: 'Recipe tutorial' },
+    { name: 'Cocina casera peruana', category: 'Home cooking' },
+    { name: 'Lonchera creativa', category: 'Kids lunch' },
+    { name: 'Parrillada en casa', category: 'BBQ content' },
+    { name: 'Unboxing delivery', category: 'Delivery experience' },
   ],
 };
 
 // Configuracion para Meta (Facebook/Instagram)
 export const META_CONFIG = {
   hashtags: [
-    ...HASHTAGS_FITZONE.core,
-    ...HASHTAGS_FITZONE.fitness,
-    ...HASHTAGS_FITZONE.local,
+    ...HASHTAGS.instagram_branded,
+    ...HASHTAGS.instagram_category,
+    ...HASHTAGS.instagram_volume,
   ],
   pages: [
-    'FitZone Peru',
-    'FitZone Oficial',
-    'Smart Fit Peru',
-    'b2 gimnasio',
-  ],
-  groups: [
-    'Fitness Peru',
-    'Gym Lima',
-    'Runners Lima',
-    'CrossFit Peru',
+    'SanFernandoOficial',
+    'RedondosPeru',
+    'OttoKunzPeru',
+    'BraedtPeru',
   ],
   interests: [
-    'Fitness and wellness',
-    'Gym',
-    'Weight training',
-    'Physical exercise',
-    'Healthy lifestyle',
+    'Gastronomia peruana',
+    'Cocina en casa',
+    'Nutricion infantil',
+    'Recetas rapidas',
+    'Compras online Peru',
+    'Familia peruana',
   ],
 };
 
-// Fuentes de informacion fitness Peru
-export const FITNESS_SOURCES = [
+// Fuentes de informacion consumo masivo Peru
+export const INDUSTRY_SOURCES = [
   {
-    name: 'Mercado Fitness',
-    url: 'https://mercadofitness.com',
-    type: 'industry',
-    scraping: true,
-  },
-  {
-    name: 'AGP',
-    url: 'https://agpperu.org',
-    type: 'association',
+    name: 'Kantar Worldpanel',
+    url: 'https://www.kantar.com/campaigns/brand-footprint',
+    type: 'market_research',
     scraping: false,
   },
   {
-    name: 'El Comercio - Fitness',
-    url: 'https://elcomercio.pe/respuestas/fitness',
+    name: 'NielsenIQ Peru',
+    url: 'https://nielseniq.com',
+    type: 'market_research',
+    scraping: false,
+  },
+  {
+    name: 'El Comercio - Economia',
+    url: 'https://elcomercio.pe/economia',
     type: 'news',
     scraping: true,
   },
   {
-    name: 'Gestion - Negocios Fitness',
-    url: 'https://gestion.pe',
+    name: 'Gestion - Empresas',
+    url: 'https://gestion.pe/economia/empresas',
     type: 'business',
     scraping: true,
   },
-];
-
-// Sedes FitZone (para monitoreo individual)
-export const SEDES_FITZONE = [
   {
-    id: 1,
-    nombre: 'FitZone Miraflores',
-    slug: 'miraflores',
-    distrito: 'Miraflores',
-    keywords: ['gimnasio miraflores', 'gym miraflores', 'fitzone miraflores'],
-    hashtags: ['#Miraflores', '#GymMiraflores'],
-  },
-  {
-    id: 2,
-    nombre: 'FitZone San Isidro',
-    slug: 'san-isidro',
-    distrito: 'San Isidro',
-    keywords: ['gimnasio san isidro', 'gym san isidro', 'fitzone san isidro'],
-    hashtags: ['#SanIsidro', '#GymSanIsidro'],
-  },
-  {
-    id: 3,
-    nombre: 'FitZone Surco',
-    slug: 'surco',
-    distrito: 'Surco',
-    keywords: ['gimnasio surco', 'gym surco', 'fitzone surco'],
-    hashtags: ['#Surco', '#GymSurco'],
-  },
-  {
-    id: 4,
-    nombre: 'FitZone La Molina',
-    slug: 'la-molina',
-    distrito: 'La Molina',
-    keywords: ['gimnasio la molina', 'gym la molina', 'fitzone la molina'],
-    hashtags: ['#LaMolina', '#GymLaMolina'],
-  },
-  {
-    id: 5,
-    nombre: 'FitZone San Borja',
-    slug: 'san-borja',
-    distrito: 'San Borja',
-    keywords: ['gimnasio san borja', 'gym san borja', 'fitzone san borja'],
-    hashtags: ['#SanBorja', '#GymSanBorja'],
-  },
-  {
-    id: 6,
-    nombre: 'FitZone Magdalena',
-    slug: 'magdalena',
-    distrito: 'Magdalena',
-    keywords: ['gimnasio magdalena', 'gym magdalena', 'fitzone magdalena'],
-    hashtags: ['#Magdalena', '#GymMagdalena'],
-  },
-  {
-    id: 7,
-    nombre: 'FitZone Jesus Maria',
-    slug: 'jesus-maria',
-    distrito: 'Jesus Maria',
-    keywords: ['gimnasio jesus maria', 'gym jesus maria'],
-    hashtags: ['#JesusMaria', '#GymJesusMaria'],
-  },
-  {
-    id: 8,
-    nombre: 'FitZone Lince',
-    slug: 'lince',
-    distrito: 'Lince',
-    keywords: ['gimnasio lince', 'gym lince', 'fitzone lince'],
-    hashtags: ['#Lince', '#GymLince'],
-  },
-  {
-    id: 9,
-    nombre: 'FitZone San Miguel',
-    slug: 'san-miguel',
-    distrito: 'San Miguel',
-    keywords: ['gimnasio san miguel', 'gym san miguel', 'fitzone san miguel'],
-    hashtags: ['#SanMiguel', '#GymSanMiguel'],
-  },
-  {
-    id: 10,
-    nombre: 'FitZone Independencia',
-    slug: 'independencia',
-    distrito: 'Independencia',
-    keywords: ['gimnasio independencia', 'gym lima norte', 'fitzone independencia'],
-    hashtags: ['#Independencia', '#LimaNorte'],
-  },
-  {
-    id: 11,
-    nombre: 'FitZone Los Olivos',
-    slug: 'los-olivos',
-    distrito: 'Los Olivos',
-    keywords: ['gimnasio los olivos', 'gym los olivos', 'fitzone los olivos'],
-    hashtags: ['#LosOlivos', '#GymLosOlivos'],
-  },
-  {
-    id: 12,
-    nombre: 'FitZone Ate',
-    slug: 'ate',
-    distrito: 'Ate',
-    keywords: ['gimnasio ate', 'gym lima este', 'fitzone ate'],
-    hashtags: ['#Ate', '#LimaEste'],
+    name: 'CAPECE Peru',
+    url: 'https://capece.org.pe',
+    type: 'ecommerce_association',
+    scraping: false,
   },
 ];
 
 export default {
-  KEYWORDS_FITZONE,
-  HASHTAGS_FITZONE,
+  KEYWORDS,
+  HASHTAGS,
   ALL_HASHTAGS,
   ALL_KEYWORDS,
   HIGH_INTENT_KEYWORDS,
   GOOGLE_TRENDS_CONFIG,
   TIKTOK_CONFIG,
   META_CONFIG,
-  FITNESS_SOURCES,
-  SEDES_FITZONE,
+  INDUSTRY_SOURCES,
 };

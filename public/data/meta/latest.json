@@ -1,144 +1,78 @@
 {
-  "timestamp": "2026-01-21T08:30:00.000Z",
-  "source": "Meta/Facebook Social Listening",
-  "region": "LATAM",
+  "updated_at": "2026-03-16T08:00:00Z",
+  "source": "Meta Insights Peru — Consumo masivo / Alimentos",
+  "region": "PE",
   "category": "Social Listening",
-  "client": "FitZone Peru - Cadena de Gimnasios",
-  "pages": [
+  "client": "San Fernando S.A.",
+  "top_topics": [
     {
-      "name": "FitZone Official Pages - Public",
-      "source": "Facebook Public Pages",
-      "period": "Last 30 days",
-      "topics": [
-        {
-          "topic": "Propositos Fitness 2026",
-          "mentions": 2850,
-          "engagement_score": 92,
-          "growth": "+185%",
-          "sentiment": "positive",
-          "top_brands": ["FitZone", "Smart Fit", "b2", "KO Urban"],
-          "avg_reactions": 245,
-          "avg_comments": 38,
-          "avg_shares": 22
-        },
-        {
-          "topic": "Membresias y Precios",
-          "mentions": 1650,
-          "engagement_score": 78,
-          "growth": "+42%",
-          "sentiment": "neutral",
-          "top_brands": ["Smart Fit", "FitZone", "b2", "Sportlife"],
-          "avg_reactions": 128,
-          "avg_comments": 52,
-          "avg_shares": 8
-        },
-        {
-          "topic": "Transformaciones y Resultados",
-          "mentions": 3200,
-          "engagement_score": 95,
-          "growth": "+125%",
-          "sentiment": "positive",
-          "top_brands": ["FitZone", "b2"],
-          "avg_reactions": 520,
-          "avg_comments": 85,
-          "avg_shares": 65
-        },
-        {
-          "topic": "Clases Grupales",
-          "mentions": 980,
-          "engagement_score": 82,
-          "growth": "+38%",
-          "sentiment": "positive",
-          "top_brands": ["b2", "FitZone", "KO Urban"],
-          "avg_reactions": 185,
-          "avg_comments": 42,
-          "avg_shares": 18
-        },
-        {
-          "topic": "Nutricion y Suplementos",
-          "mentions": 1420,
-          "engagement_score": 75,
-          "growth": "+28%",
-          "sentiment": "neutral",
-          "top_brands": ["GNC", "Herbalife", "FitZone Nutrition"],
-          "avg_reactions": 145,
-          "avg_comments": 58,
-          "avg_shares": 12
-        }
-      ],
-      "metadata": {
-        "pages_monitored": ["https://www.facebook.com/FitZonePeru", "https://www.instagram.com/fitzoneperu"],
-        "total_posts_analyzed": 285,
-        "total_comments_analyzed": 4850,
-        "timeframe": "Last 30 days"
-      }
+      "topic": "Recetas rapidas para el almuerzo",
+      "engagement_index": 94,
+      "reach_potential": 3800000,
+      "dominant_platform": "Facebook",
+      "audience_demo": "Mujeres 28-45, NSE C, Lima",
+      "content_format": "Video 15-30s con musica peruana de fondo"
+    },
+    {
+      "topic": "Lonchera nutritiva para ninos",
+      "engagement_index": 88,
+      "reach_potential": 2900000,
+      "dominant_platform": "Facebook + Instagram",
+      "audience_demo": "Madres 25-40, NSE B/C",
+      "content_format": "Carrusel con 5 ideas de lonchera + video 15s"
+    },
+    {
+      "topic": "Delivery de comida en Lima",
+      "engagement_index": 82,
+      "reach_potential": 4100000,
+      "dominant_platform": "Instagram + Facebook",
+      "audience_demo": "Mixto 22-45, NSE B/C, Lima",
+      "content_format": "Video testimonial 'llego en 60 minutos'"
+    },
+    {
+      "topic": "Proteina saludable / Sin octogonos",
+      "engagement_index": 76,
+      "reach_potential": 2200000,
+      "dominant_platform": "Instagram",
+      "audience_demo": "Millennials 25-35, NSE A/B",
+      "content_format": "Infografia + video educativo"
+    },
+    {
+      "topic": "Parrilla y barbacoa en casa",
+      "engagement_index": 79,
+      "reach_potential": 2600000,
+      "dominant_platform": "Facebook",
+      "audience_demo": "Hombres 28-50, NSE B/C",
+      "content_format": "Video tutorial parrilla + UGC fotos parrilladas"
     }
   ],
-  "aggregatedTopics": [
-    {
-      "topic": "Propositos Fitness 2026",
-      "mentions": 2850,
-      "engagement_score": 92,
-      "growth": "+185%",
-      "sentiment": "positive",
-      "top_brands": ["FitZone", "Smart Fit", "b2", "KO Urban"],
-      "avg_reactions": 245,
-      "avg_comments": 38,
-      "avg_shares": 22
+  "brand_sentiment": {
+    "san_fernando": {
+      "positive": 0.82,
+      "neutral": 0.13,
+      "negative": 0.05,
+      "top_positive_keywords": ["calidad", "confianza", "familia", "rico", "fresco"],
+      "top_negative_keywords": ["precio", "disponibilidad", "demora entrega"]
     },
-    {
-      "topic": "Membresias y Precios",
-      "mentions": 1650,
-      "engagement_score": 78,
-      "growth": "+42%",
-      "sentiment": "neutral",
-      "top_brands": ["Smart Fit", "FitZone", "b2", "Sportlife"],
-      "avg_reactions": 128,
-      "avg_comments": 52,
-      "avg_shares": 8
+    "redondos": {
+      "positive": 0.74,
+      "neutral": 0.18,
+      "negative": 0.08
     },
-    {
-      "topic": "Transformaciones y Resultados",
-      "mentions": 3200,
-      "engagement_score": 95,
-      "growth": "+125%",
-      "sentiment": "positive",
-      "top_brands": ["FitZone", "b2"],
-      "avg_reactions": 520,
-      "avg_comments": 85,
-      "avg_shares": 65
-    },
-    {
-      "topic": "Clases Grupales",
-      "mentions": 980,
-      "engagement_score": 82,
-      "growth": "+38%",
-      "sentiment": "positive",
-      "top_brands": ["b2", "FitZone", "KO Urban"],
-      "avg_reactions": 185,
-      "avg_comments": 42,
-      "avg_shares": 18
-    },
-    {
-      "topic": "Nutricion y Suplementos",
-      "mentions": 1420,
-      "engagement_score": 75,
-      "growth": "+28%",
-      "sentiment": "neutral",
-      "top_brands": ["GNC", "Herbalife", "FitZone Nutrition"],
-      "avg_reactions": 145,
-      "avg_comments": 58,
-      "avg_shares": 12
+    "otto_kunz": {
+      "positive": 0.71,
+      "neutral": 0.19,
+      "negative": 0.10
     }
-  ],
+  },
   "metadata": {
     "method": "Apify Social Listening Actor",
     "actor": "social-listening-meta",
-    "note": "Datos curados de Facebook e Instagram para fitness Lima",
+    "note": "Datos curados de Facebook e Instagram para consumo masivo Peru",
     "timeframe": "Last 30 days",
-    "posts_analyzed": 285,
-    "comments_analyzed": 4850,
-    "pages_analyzed": 12,
+    "posts_analyzed": 420,
+    "comments_analyzed": 8200,
+    "pages_analyzed": 8,
     "topics_configured": 5
   }
 }
