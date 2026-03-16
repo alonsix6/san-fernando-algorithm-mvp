@@ -7,61 +7,66 @@ export default {
   theme: {
     extend: {
       colors: {
-        // FitZone Brand Colors - Royal Purple (Premium & Elegant)
-        fitzone: {
-          // Primarios - Violeta vibrante
-          purple: '#7C3AED',        // Violeta principal (premium, energía)
-          darkPurple: '#5B21B6',    // Violeta hover/oscuro
-          lightPurple: '#A78BFA',   // Violeta claro (acentos)
+        // San Fernando Brand Colors
+        // Fuente: Manual de identidad corporativa San Fernando
+        // Rojo: emocion, juventud, audacia | Azul: confianza, fuerza | Blanco: limpieza
+        sf: {
+          // Primarios - Rojo San Fernando
+          red: '#C8102E',           // Rojo corporativo principal
+          darkRed: '#9B0C23',       // Rojo oscuro (hover / activo)
 
-          // Secundarios - Oscuros (fondos premium)
-          charcoal: '#0F0A1A',      // Negro-morado (fondo principal)
-          slate: '#1A1432',         // Slate morado (cards)
-          darkSlate: '#0A0612',     // Más oscuro (contraste)
+          // Secundarios - Azul San Fernando
+          blue: '#003087',          // Azul corporativo
+          blueLight: '#0052CC',     // Azul medio (links, acentos)
 
-          // Acentos tech/datos
-          cyan: '#06B6D4',          // Cyan (datos, tech)
-          electric: '#22D3EE',      // Cyan brillante (gráficos)
+          // Acento calido
+          accent: '#F5A623',        // Ambar/dorado (evoca pollo dorado)
+          accentLight: '#FFC74F',   // Ambar claro
 
-          // Éxito/Positivo
-          emerald: '#10B981',       // Esmeralda (éxito, crecimiento)
-          green: '#22C55E',         // Verde (positivo)
+          // Fondos oscuros (dashboard)
+          charcoal: '#1A1A2E',      // Fondo principal oscuro
+          dark: '#16213E',          // Cards/paneles
+          darkSlate: '#0F0F1A',     // Mas oscuro (contraste)
+
+          // Exito/Positivo
+          success: '#22C55E',       // Verde (ventas, positivo)
+          successLight: '#4ADE80',  // Verde claro
 
           // Alerta/Negativo
-          red: '#EF4444',           // Rojo (alerta)
-          amber: '#F59E0B',         // Ámbar (advertencia)
+          danger: '#EF4444',        // Rojo alerta
+          warning: '#F59E0B',       // Ambar advertencia
 
           // Neutros
           white: '#FFFFFF',
-          lightGray: '#F5F5F7',
+          lightGray: '#F5F5F5',
           textGray: '#9CA3AF',
           mediumGray: '#6B7280',
         },
-        // Semantic colors
-        success: '#10B981',         // Esmeralda FitZone para éxito
-        warning: '#F59E0B',         // Ámbar
-        error: '#EF4444',           // Rojo
-        info: '#06B6D4',            // Cyan
+        // Semantic colors (WCAG AA compatible)
+        success: '#22C55E',
+        warning: '#F59E0B',
+        error: '#EF4444',
+        info: '#0052CC',
       },
       fontFamily: {
         sans: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
         display: ['Inter', 'Helvetica Neue', 'sans-serif'],
       },
       backgroundImage: {
-        // Gradientes FitZone Royal Purple
-        'gradient-fitzone': 'linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%)',
-        'gradient-fitzone-dark': 'linear-gradient(135deg, #1A1432 0%, #0F0A1A 100%)',
-        'gradient-fitzone-energy': 'linear-gradient(135deg, #7C3AED 0%, #10B981 100%)',
-        'gradient-fitzone-tech': 'linear-gradient(135deg, #06B6D4 0%, #22D3EE 100%)',
-        'gradient-fitzone-premium': 'linear-gradient(135deg, #0F0A1A 0%, #1A1432 50%, #7C3AED 100%)',
-        'gradient-hero': 'linear-gradient(180deg, #0F0A1A 0%, #1A1432 100%)',
+        // Gradientes San Fernando — colores solidos, sin degradados genericos
+        'gradient-sf': 'linear-gradient(135deg, #C8102E 0%, #9B0C23 100%)',
+        'gradient-sf-dark': 'linear-gradient(135deg, #16213E 0%, #1A1A2E 100%)',
+        'gradient-sf-corporate': 'linear-gradient(135deg, #C8102E 0%, #9B0C23 50%, #003087 100%)',
+        'gradient-sf-blue': 'linear-gradient(135deg, #003087 0%, #0052CC 100%)',
+        'gradient-hero': 'linear-gradient(180deg, #1A1A2E 0%, #16213E 100%)',
       },
       boxShadow: {
-        'fitzone': '0 20px 50px rgba(124, 58, 237, 0.15)',
-        'fitzone-lg': '0 30px 60px rgba(124, 58, 237, 0.25)',
-        'fitzone-glow': '0 0 30px rgba(124, 58, 237, 0.4)',
+        'sf': '0 20px 50px rgba(200, 16, 46, 0.15)',
+        'sf-lg': '0 30px 60px rgba(200, 16, 46, 0.25)',
+        'sf-glow': '0 0 30px rgba(200, 16, 46, 0.4)',
+        'sf-blue': '0 0 20px rgba(0, 48, 135, 0.3)',
         'card': '0 4px 20px rgba(0, 0, 0, 0.3)',
-        'card-hover': '0 8px 30px rgba(124, 58, 237, 0.2)',
+        'card-hover': '0 8px 30px rgba(200, 16, 46, 0.2)',
       },
       animation: {
         'fadeIn': 'fadeIn 0.5s ease-in-out',
@@ -84,8 +89,8 @@ export default {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(124, 58, 237, 0.3)' },
-          '50%': { boxShadow: '0 0 40px rgba(124, 58, 237, 0.6)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(200, 16, 46, 0.3)' },
+          '50%': { boxShadow: '0 0 40px rgba(200, 16, 46, 0.6)' },
         },
         bounceSubtle: {
           '0%, 100%': { transform: 'translateY(0)' },

@@ -1,139 +1,48 @@
 {
-  "timestamp": "2026-01-21T08:30:00.000Z",
-  "property": "FitZone Peru - Membresias",
+  "updated_at": "2026-03-16T08:00:00Z",
+  "property": "sanfernando.pe + delivery.sanfernando.pe (combinado)",
   "source": "Google Analytics 4",
-  "overview": {
-    "totalUsers": 42800,
-    "sessions": 68500,
-    "conversions": 1850,
-    "conversionRate": 0.027
+  "period": "Ultimos 30 dias",
+  "summary": {
+    "sessions": 87400,
+    "users": 68200,
+    "new_users": 51800,
+    "pageviews": 214000,
+    "bounce_rate": 0.48,
+    "avg_session_duration_seconds": 134,
+    "conversions_ecommerce": 9340,
+    "revenue_soles": 168000,
+    "conversion_rate": 0.0075
   },
-  "topPages": [
-    {
-      "page": "/membresias",
-      "views": 18500,
-      "avgTimeOnPage": "4m 12s",
-      "exitRate": 0.28,
-      "conversionRate": 0.082
-    },
-    {
-      "page": "/sedes/miraflores",
-      "views": 12200,
-      "avgTimeOnPage": "3m 45s",
-      "exitRate": 0.32,
-      "conversionRate": 0.065
-    },
-    {
-      "page": "/promociones",
-      "views": 15600,
-      "avgTimeOnPage": "2m 58s",
-      "exitRate": 0.25,
-      "conversionRate": 0.088
-    },
-    {
-      "page": "/clases",
-      "views": 9800,
-      "avgTimeOnPage": "3m 22s",
-      "exitRate": 0.35,
-      "conversionRate": 0.058
-    },
-    {
-      "page": "/personal-training",
-      "views": 7200,
-      "avgTimeOnPage": "4m 05s",
-      "exitRate": 0.38,
-      "conversionRate": 0.042
-    },
-    {
-      "page": "/horarios",
-      "views": 8900,
-      "avgTimeOnPage": "2m 15s",
-      "exitRate": 0.42,
-      "conversionRate": 0.048
-    },
-    {
-      "page": "/trial-gratis",
-      "views": 11200,
-      "avgTimeOnPage": "3m 38s",
-      "exitRate": 0.22,
-      "conversionRate": 0.125
-    },
-    {
-      "page": "/nutricion",
-      "views": 5400,
-      "avgTimeOnPage": "4m 25s",
-      "exitRate": 0.35,
-      "conversionRate": 0.055
-    }
+  "top_pages": [
+    { "page": "/categorias/congelados", "sessions": 18400, "bounce": 0.42 },
+    { "page": "/categorias/embutidos", "sessions": 14800, "bounce": 0.45 },
+    { "page": "/categorias/pollo", "sessions": 12600, "bounce": 0.50 },
+    { "page": "/categorias/todo", "sessions": 11200, "bounce": 0.38 },
+    { "page": "/categorias/pavita", "sessions": 8400, "bounce": 0.44 },
+    { "page": "/blog", "sessions": 7200, "bounce": 0.55 }
   ],
-  "searchTerms": [
-    {
-      "term": "membresia precio",
-      "searches": 3200,
-      "resultClicks": 2720,
-      "conversionRate": 0.092,
-      "trend": "rising"
-    },
-    {
-      "term": "gimnasio miraflores",
-      "searches": 2850,
-      "resultClicks": 2420,
-      "conversionRate": 0.078,
-      "trend": "rising"
-    },
-    {
-      "term": "trial gratis",
-      "searches": 2100,
-      "resultClicks": 1890,
-      "conversionRate": 0.125,
-      "trend": "rising"
-    },
-    {
-      "term": "horarios clases",
-      "searches": 1850,
-      "resultClicks": 1575,
-      "conversionRate": 0.062,
-      "trend": "stable"
-    },
-    {
-      "term": "personal trainer",
-      "searches": 1400,
-      "resultClicks": 1190,
-      "conversionRate": 0.048,
-      "trend": "rising"
-    },
-    {
-      "term": "spinning lima",
-      "searches": 980,
-      "resultClicks": 835,
-      "conversionRate": 0.058,
-      "trend": "stable"
-    },
-    {
-      "term": "crossfit surco",
-      "searches": 720,
-      "resultClicks": 612,
-      "conversionRate": 0.065,
-      "trend": "rising"
-    },
-    {
-      "term": "plan familiar",
-      "searches": 650,
-      "resultClicks": 552,
-      "conversionRate": 0.052,
-      "trend": "stable"
-    }
+  "traffic_by_device": [
+    { "device": "Mobile", "share": 0.76, "conversion_rate": 0.0068 },
+    { "device": "Desktop", "share": 0.19, "conversion_rate": 0.0094 },
+    { "device": "Tablet", "share": 0.05, "conversion_rate": 0.0071 }
   ],
-  "trafficSources": {
-    "organic_search": { "percentage": 28, "sessions": 19180 },
-    "paid_search": { "percentage": 25, "sessions": 17125 },
-    "social_media": { "percentage": 35, "sessions": 23975 },
-    "direct": { "percentage": 8, "sessions": 5480 },
-    "referral": { "percentage": 4, "sessions": 2740 }
-  },
-  "devices": {
-    "mobile": { "percentage": 78, "sessions": 53430 },
-    "desktop": { "percentage": 18, "sessions": 12330 },
-    "tablet": { "percentage": 4, "sessions": 2740 }
+  "traffic_by_source": [
+    { "source": "Meta Ads", "sessions": 31000, "revenue_soles": 58000, "roas": 2.9 },
+    { "source": "Google Ads", "sessions": 22000, "revenue_soles": 52000, "roas": 4.1 },
+    { "source": "Organic Search", "sessions": 18500, "revenue_soles": 28000 },
+    { "source": "TikTok Ads", "sessions": 9200, "revenue_soles": 18000, "roas": 2.4 },
+    { "source": "Direct", "sessions": 4800, "revenue_soles": 9000 },
+    { "source": "Referral", "sessions": 1900, "revenue_soles": 3000 }
+  ],
+  "funnel": {
+    "reach_impressions": 11650000,
+    "reach_unique": 2380000,
+    "website_visits": 87400,
+    "product_views": 42000,
+    "add_to_cart": 18600,
+    "checkout_started": 12400,
+    "purchases": 9340,
+    "notes": "Caida critica entre Add to Cart y Checkout (33%). Optimizar UX mobile."
   }
 }

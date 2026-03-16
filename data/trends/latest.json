@@ -1,240 +1,124 @@
 {
-  "timestamp": "2026-01-05T17:02:08.274Z",
+  "updated_at": "2026-03-16T08:00:00Z",
+  "source": "Google Trends (Peru, 90 dias)",
   "region": "PE",
-  "category": "Education",
-  "source": "Google Trends (Curated Fallback)",
-  "client": "UCSP - Universidad Católica San Pablo",
+  "category": "Food & Drink",
+  "client": "San Fernando S.A.",
   "keywords": [
     {
-      "keyword": "universidad arequipa",
-      "average_interest": 78,
+      "keyword": "nuggets de pollo",
+      "value": 92,
       "trend": "rising",
-      "peak_score": 92,
-      "growth_3m": "+35%",
-      "top_regions": {
-        "Arequipa": 100,
-        "Puno": 58,
-        "Cusco": 50,
-        "Lima": 42,
-        "Tacna": 38
-      },
-      "rising_queries": [
-        "universidades arequipa ranking",
-        "mejores universidades arequipa",
-        "carreras arequipa"
-      ],
-      "related_topics": [
-        {
-          "title": "UCSP",
-          "type": "University",
-          "value": 85
-        },
-        {
-          "title": "UCSM",
-          "type": "University",
-          "value": 75
-        },
-        {
-          "title": "UNSA",
-          "type": "University",
-          "value": 70
-        }
-      ],
-      "source": "curated"
-    },
-    {
-      "keyword": "estudiar en arequipa",
-      "average_interest": 72,
-      "trend": "rising",
-      "peak_score": 88,
-      "growth_3m": "+28%",
-      "top_regions": {
-        "Arequipa": 100,
-        "Puno": 62,
-        "Cusco": 55,
-        "Tacna": 45,
-        "Moquegua": 40
-      },
-      "rising_queries": [
-        "donde estudiar arequipa",
-        "carreras universitarias arequipa",
-        "becas arequipa"
-      ],
-      "related_topics": [
-        {
-          "title": "Ingeniería",
-          "type": "Field",
-          "value": 80
-        },
-        {
-          "title": "Medicina",
-          "type": "Field",
-          "value": 75
-        },
-        {
-          "title": "Derecho",
-          "type": "Field",
-          "value": 65
-        }
-      ],
-      "source": "curated"
-    },
-    {
-      "keyword": "carreras universitarias peru",
-      "average_interest": 85,
-      "trend": "rising",
-      "peak_score": 100,
-      "growth_3m": "+45%",
+      "change_pct": 18,
+      "related": ["nuggets pechuga", "nuggets con chia", "receta nuggets"],
       "top_regions": {
         "Lima": 100,
-        "Arequipa": 72,
-        "Cusco": 65,
-        "Trujillo": 58,
-        "Puno": 52
+        "Callao": 78,
+        "Arequipa": 52,
+        "Trujillo": 45
       },
-      "rising_queries": [
-        "carreras mejor pagadas peru",
-        "carreras con futuro",
-        "que estudiar peru 2026"
-      ],
-      "related_topics": [
-        {
-          "title": "Ingeniería de Sistemas",
-          "type": "Career",
-          "value": 90
-        },
-        {
-          "title": "Medicina",
-          "type": "Career",
-          "value": 88
-        },
-        {
-          "title": "Administración",
-          "type": "Career",
-          "value": 75
-        }
-      ],
       "source": "curated"
     },
     {
-      "keyword": "ingenieria industrial peru",
-      "average_interest": 76,
+      "keyword": "delivery pollo Lima",
+      "value": 85,
       "trend": "rising",
-      "peak_score": 92,
-      "growth_3m": "+52%",
+      "change_pct": 14,
+      "related": ["delivery carne Lima", "pollo a domicilio", "comprar pollo online"],
+      "top_regions": {
+        "Lima": 100,
+        "Callao": 72
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "hamburguesa de pollo",
+      "value": 78,
+      "trend": "stable",
+      "change_pct": 3,
+      "related": ["hamburguesa pollo casera", "hamburguesa congelada"],
+      "top_regions": {
+        "Lima": 100,
+        "Arequipa": 58,
+        "Trujillo": 42
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "San Fernando",
+      "value": 74,
+      "trend": "stable",
+      "change_pct": 5,
+      "related": ["San Fernando pollo", "San Fernando delivery", "San Fernando embutidos"],
+      "top_regions": {
+        "Lima": 100,
+        "Arequipa": 62,
+        "Trujillo": 55,
+        "Piura": 48
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "hot dog pollo",
+      "value": 68,
+      "trend": "stable",
+      "change_pct": -2,
+      "related": ["hot dog ninos", "hot dog sandwich", "salchicha pollo"],
+      "top_regions": {
+        "Lima": 100,
+        "Callao": 65,
+        "Arequipa": 42
+      },
+      "source": "curated"
+    },
+    {
+      "keyword": "recetas faciles pollo Peru",
+      "value": 88,
+      "trend": "rising",
+      "change_pct": 22,
+      "related": ["recetas pollo rapidas", "receta lonchera"],
       "top_regions": {
         "Lima": 100,
         "Arequipa": 68,
-        "Cusco": 55,
-        "Trujillo": 52,
-        "Puno": 48
+        "Trujillo": 55,
+        "Cusco": 42
       },
-      "rising_queries": [
-        "ingenieria industrial campo laboral",
-        "ingenieria industrial sueldo",
-        "mejores universidades ingenieria industrial"
-      ],
-      "related_topics": [
-        {
-          "title": "Industria 4.0",
-          "type": "Topic",
-          "value": 85
-        },
-        {
-          "title": "Automatización",
-          "type": "Topic",
-          "value": 72
-        },
-        {
-          "title": "Gestión de calidad",
-          "type": "Topic",
-          "value": 65
-        }
-      ],
       "source": "curated"
     },
     {
-      "keyword": "medicina peru",
-      "average_interest": 82,
+      "keyword": "embutidos de pollo Peru",
+      "value": 61,
       "trend": "stable",
-      "peak_score": 95,
-      "growth_3m": "+18%",
+      "change_pct": 7,
+      "related": ["embutidos sin octogonos", "salchicha light"],
       "top_regions": {
         "Lima": 100,
-        "Arequipa": 75,
-        "Cusco": 62,
-        "Trujillo": 58,
-        "Puno": 55
+        "Callao": 58,
+        "Arequipa": 38
       },
-      "rising_queries": [
-        "estudiar medicina peru",
-        "mejores universidades medicina",
-        "medicina costo"
-      ],
-      "related_topics": [
-        {
-          "title": "UPCH",
-          "type": "University",
-          "value": 90
-        },
-        {
-          "title": "San Marcos",
-          "type": "University",
-          "value": 85
-        },
-        {
-          "title": "Residencia médica",
-          "type": "Topic",
-          "value": 78
-        }
-      ],
       "source": "curated"
     },
     {
-      "keyword": "derecho peru",
-      "average_interest": 70,
-      "trend": "stable",
-      "peak_score": 85,
-      "growth_3m": "+12%",
+      "keyword": "pavita Peru",
+      "value": 42,
+      "trend": "rising",
+      "change_pct": 28,
+      "related": ["pavita trozada", "medallon pavita", "pechuga pavita marinada"],
       "top_regions": {
         "Lima": 100,
-        "Arequipa": 65,
-        "Cusco": 58,
-        "Trujillo": 52,
-        "Puno": 48
+        "Arequipa": 45,
+        "Trujillo": 38
       },
-      "rising_queries": [
-        "estudiar derecho peru",
-        "abogado peru",
-        "derecho laboral"
-      ],
-      "related_topics": [
-        {
-          "title": "Derecho constitucional",
-          "type": "Field",
-          "value": 75
-        },
-        {
-          "title": "Derecho penal",
-          "type": "Field",
-          "value": 70
-        },
-        {
-          "title": "Derecho civil",
-          "type": "Field",
-          "value": 68
-        }
-      ],
       "source": "curated"
     }
   ],
   "metadata": {
-    "method": "Curated data (Apify unavailable)",
-    "note": "Keywords genéricos de alto volumen. Los brand_keywords son opcionales para scraping separado.",
-    "timeframe": "today 1-m",
+    "method": "Curated data (Google Trends PE)",
+    "note": "Keywords de consumo masivo y proteina animal de alto volumen para Peru. Pico estacional de Marzo por inicio escolar.",
+    "timeframe": "today 3-m",
     "apify_keywords": 0,
-    "curated_keywords": 6,
-    "market": "Sur del Perú (Arequipa, Puno, Cusco, Moquegua, Tacna)",
-    "product": "Pregrado y Posgrado 2026-I"
+    "curated_keywords": 8,
+    "market": "Lima Metropolitana + principales ciudades",
+    "product": "Proteina animal: Congelados, Embutidos, Carnicos, Huevos"
   }
 }
