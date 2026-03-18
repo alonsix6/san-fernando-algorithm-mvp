@@ -31,28 +31,28 @@ export default function Dashboard() {
       id: 'data',
       name: LAYER_CONFIG.data.name,
       icon: iconMap[LAYER_CONFIG.data.icon],
-      description: LAYER_CONFIG.data.description,
+      subtitle: LAYER_CONFIG.data.subtitle,
       color: 'bg-sf-blue'
     },
     {
       id: 'decision',
       name: LAYER_CONFIG.decision.name,
       icon: iconMap[LAYER_CONFIG.decision.icon],
-      description: LAYER_CONFIG.decision.description,
+      subtitle: LAYER_CONFIG.decision.subtitle,
       color: 'bg-sf-blueLight'
     },
     {
       id: 'execution',
       name: LAYER_CONFIG.execution.name,
       icon: iconMap[LAYER_CONFIG.execution.icon],
-      description: LAYER_CONFIG.execution.description,
+      subtitle: LAYER_CONFIG.execution.subtitle,
       color: 'bg-sf-accent'
     },
     {
       id: 'optimization',
       name: LAYER_CONFIG.optimization.name,
       icon: iconMap[LAYER_CONFIG.optimization.icon],
-      description: LAYER_CONFIG.optimization.description,
+      subtitle: LAYER_CONFIG.optimization.subtitle,
       color: 'bg-sf-success'
     }
   ];
@@ -134,7 +134,7 @@ export default function Dashboard() {
                   <div className="text-left min-w-0">
                     <p className="text-xs font-semibold whitespace-nowrap">{layer.name}</p>
                     <p className={`text-[10px] whitespace-nowrap ${isActive ? 'text-white/80' : 'text-sf-textGray'}`}>
-                      {layer.description}
+                      {layer.subtitle}
                     </p>
                   </div>
                 </button>
